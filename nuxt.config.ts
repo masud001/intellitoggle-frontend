@@ -9,6 +9,12 @@ export default defineNuxtConfig({
   nitro: {
     experimental: {
       wasm: true
+    },
+    // Skip prerendering of image optimization routes
+    prerender: {
+      ignore: [
+        '/.netlify/images'
+      ]
     }
   },
   vite:{
@@ -33,20 +39,14 @@ export default defineNuxtConfig({
     }
   ],
   image: {
-    // Enable image optimization
-    quality: 80,
-    format: ['webp', 'avif', 'png'],
-    // Enable lazy loading by default (except for critical images)
-    loading: 'lazy',
-    // Enable preloading for critical images
-    preload: false,
-    // Responsive image sizes
-    screens: {
-      xs: 320,
-      sm: 375,
-      md: 393,
-      lg: 1024,
-      xl: 1920,
+    // Configure fallback behavior for missing images
+    presets: {
+      default: {
+        modifiers: {
+          format: 'webp',
+          quality: 80
+        }
+      }
     }
   },
   googleFonts: {
