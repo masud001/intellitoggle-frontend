@@ -1,0 +1,292 @@
+@import "tailwindcss";
+
+/* Custom Font Face Declarations */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Variable.woff2') format('woff2'),
+       url('/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Variable.woff') format('woff'),
+       url('/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Variable.ttf') format('truetype');
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-VariableItalic.woff2') format('woff2'),
+       url('/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-VariableItalic.woff') format('woff'),
+       url('/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-VariableItalic.ttf') format('truetype');
+  font-weight: 300 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Segoe UI This';
+  src: url('/fonts/segoe-ui-this/segoeuithis.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Segoe UI This';
+  src: url('/fonts/segoe-ui-this/segoeuithibd.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Segoe UI This';
+  src: url('/fonts/segoe-ui-this/segoeuithisi.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Segoe UI This';
+  src: url('/fonts/segoe-ui-this/segoeuithisz.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@theme {
+  /* Custom Breakpoints */
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 375px;
+  --breakpoint-md: 393px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1024px;
+  --breakpoint-2xl: 1200px;
+  --breakpoint-3xl: 1440px;
+  --breakpoint-4xl: 1920px;
+  
+  /* Font Families */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-satoshi: "Satoshi", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-dm-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-merriweather-sans: "Merriweather Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-segoe-ui-this: "Segoe UI This", "Segoe UI", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  
+  /* Font Feature Settings */
+  --font-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  --font-satoshi--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  --font-dm-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  --font-merriweather-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  --font-segoe-ui-this--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  
+  /* Font Variation Settings */
+  --font-sans--font-variation-settings: "opsz" 32;
+  --font-satoshi--font-variation-settings: "opsz" 32;
+  --font-dm-sans--font-variation-settings: "opsz" 32;
+  --font-merriweather-sans--font-variation-settings: "opsz" 32;
+  --font-segoe-ui-this--font-variation-settings: "opsz" 32;
+}
+
+/* Custom Font Utilities */
+.font-satoshi {
+  font-family: var(--font-satoshi);
+  font-feature-settings: var(--font-satoshi--font-feature-settings);
+  font-variation-settings: var(--font-satoshi--font-variation-settings);
+}
+
+.font-dm-sans {
+  font-family: var(--font-dm-sans);
+  font-feature-settings: var(--font-dm-sans--font-feature-settings);
+  font-variation-settings: var(--font-dm-sans--font-variation-settings);
+}
+
+.font-merriweather-sans {
+  font-family: var(--font-merriweather-sans);
+  font-feature-settings: var(--font-merriweather-sans--font-feature-settings);
+  font-variation-settings: var(--font-merriweather-sans--font-variation-settings);
+}
+
+.font-segoe-ui-this {
+  font-family: var(--font-segoe-ui-this);
+  font-feature-settings: var(--font-segoe-ui-this--font-feature-settings);
+  font-variation-settings: var(--font-segoe-ui-this--font-variation-settings);
+}
+
+/* Font Loading Optimization */
+.font-sans,
+.font-satoshi,
+.font-dm-sans,
+.font-merriweather-sans,
+.font-segoe-ui-this {
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Container Utilities */
+.container-custom {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /* Base spacing variables */
+  --space-top: 16px;
+  --space-left: 16px;
+  --space-right: 16px;
+  --space-bottom: 16px;
+  padding-left: var(--space-left);
+  padding-right: var(--space-right);
+  padding-top: var(--space-top);
+  padding-bottom: var(--space-bottom);
+}
+
+/* Extra small devices (320px) */
+@media (min-width: 320px) {
+  .container-custom {
+    --space-top: 16px;
+    --space-left: 16px;
+    --space-right: 16px;
+    --space-bottom: 16px;
+    max-width: 320px;
+  }
+}
+
+/* Small devices (375px) */
+@media (min-width: 375px) {
+  .container-custom {
+    --space-top: 20px;
+    --space-left: 20px;
+    --space-right: 20px;
+    --space-bottom: 20px;
+    max-width: 375px;
+  }
+}
+
+/* Mobile devices (393px) */
+@media (min-width: 393px) {
+  .container-custom {
+    --space-top: 29px;
+    --space-left: 27px;
+    --space-right: 29px;
+    --space-bottom: 0px;
+    max-width: 393px;
+  }
+}
+
+/* Tablet devices (768px) */
+@media (min-width: 768px) {
+  .container-custom {
+    --space-top: 24px;
+    --space-left: 32px;
+    --space-right: 32px;
+    --space-bottom: 24px;
+    max-width: 768px;
+  }
+}
+
+/* Large devices (992px) */
+@media (min-width: 992px) {
+  .container-custom {
+    --space-top: 28px;
+    --space-left: 48px;
+    --space-right: 48px;
+    --space-bottom: 28px;
+    max-width: 992px;
+  }
+}
+
+/* Extra large devices (1024px) */
+@media (min-width: 1024px) {
+  .container-custom {
+    --space-top: 32px;
+    --space-left: 64px;
+    --space-right: 64px;
+    --space-bottom: 32px;
+    max-width: 1024px;
+  }
+}
+
+/* 2XL devices (1200px) */
+@media (min-width: 1200px) {
+  .container-custom {
+    --space-top: 36px;
+    --space-left: 80px;
+    --space-right: 80px;
+    --space-bottom: 36px;
+    max-width: 1200px;
+  }
+}
+
+/* 3XL devices (1440px) */
+@media (min-width: 1440px) {
+  .container-custom {
+    --space-top: 40px;
+    --space-left: 120px;
+    --space-right: 120px;
+    --space-bottom: 40px;
+    max-width: 1440px;
+  }
+}
+
+/* 4XL devices (1920px) with container 1680px */
+@media (min-width: 1920px) {
+  .container-custom {
+    --space-top: 40px;
+    --space-left: 0px;
+    --space-right: 0px;
+    --space-bottom: 40px;
+    max-width: 1680px;
+  }
+}
+
+/* Optimized Container Variants */
+.container-custom-no-margin {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container-custom-no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.container-custom-tight {
+  --space-top: calc(var(--space-top) * 0.5);
+  --space-bottom: calc(var(--space-bottom) * 0.5);
+  --space-left: calc(var(--space-left) * 0.5);
+  --space-right: calc(var(--space-right) * 0.5);
+}
+
+.container-custom-loose {
+  --space-top: calc(var(--space-top) * 1.5);
+  --space-bottom: calc(var(--space-bottom) * 1.5);
+  --space-left: calc(var(--space-left) * 1.5);
+  --space-right: calc(var(--space-right) * 1.5);
+}
+
+/* Performance optimizations */
+.container-custom {
+  /* Hardware acceleration */
+  transform: translateZ(0);
+  /* Optimize repaints */
+  will-change: auto;
+  /* Smooth scrolling */
+  scroll-behavior: smooth;
+}
+
+
+.custom-text {
+  background-image: linear-gradient(to bottom, #42389e, #0f1026);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
