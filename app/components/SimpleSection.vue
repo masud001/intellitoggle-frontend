@@ -16,7 +16,7 @@
 					</SectionTitle>
 
 					<!-- Subtitle -->
-					<p class="text-[#fafafa] font-dm-sans lg:font-dm-sans xl:font-sans font-normal text-[18px] md:text-[18px] lg:text-[18px] xl:text-[18px] leading-[1.32] lg:leading-[1.32] mt-[13px] px-2.5">
+					<p class="text-[#fafafa] font-dm-sans lg:font-dm-sans xl:font-sans font-normal text-[18px] md:text-[18px] lg:text-[18px] xl:text-[18px] leading-[1.32] lg:leading-[1.32] mt-[13px] px-[25px]">
 						{{ subtitle }}
 					</p>
 
@@ -49,8 +49,6 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from "vue";
-
 // Define component props
 interface Props {
 	title?: string;
@@ -61,7 +59,7 @@ interface Props {
 	secondaryButtonClass?: string;
 }
 
-const props = withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<Props>(), {
 	title: "Welcome to IntelliToggle",
 	subtitle: "The intelligent solution for modern web applications. Experience seamless functionality with our cutting-edge technology.",
 	primaryButtonText: "Get Started",
