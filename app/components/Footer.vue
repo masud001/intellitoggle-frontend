@@ -1,7 +1,7 @@
 <template>
 	<footer class="bg-[#e1e2f0] py-[64px] xl:py-[100px]">
 		<div class="container-custom">
-			<div class="lg:flex lg:gap-x-[73px] xl:gap-x-[220px]">
+			<div class="lg:flex lg:gap-x-[73px] xl:gap-x-[80px] 2xl:gap-x-[155px]">
 				<!-- Company Info & Social -->
 				<div class=" w-full max-w-[359px]">
 					<div class="flex items-center">
@@ -32,9 +32,12 @@
 					</a>
 				</div>
 
-				<div class="py-[33px] flex md:flex-wrap md:gap-y-[24px] xl:gap-x-[100px] xl:py-0 justify-between xl:w-full">
+				<div class="py-[33px] gap-x-[57px] flex md:flex-wrap md:gap-y-[24px] mobile:gap-x-[57px] xl:gap-x-[100px] 2xl:gap-x-[66px] xl:py-0 w-full xl:w-full">
 					<!-- Company Links -->
-					<FooterSection title="Company">
+					<FooterSection
+						title="Company"
+						class="xs:shrink-0 3xl:flex-1"
+					>
 						<FooterLink
 							href="#"
 							text="Pricing"
@@ -50,7 +53,10 @@
 					</FooterSection>
 
 					<!-- Resources Links -->
-					<FooterSection title="Resources">
+					<FooterSection
+						title="Resources"
+						class="xs:shrink-0 3xl:flex-1"
+					>
 						<FooterLink
 							href="#"
 							text="Why IntelliToggle is different"
@@ -69,7 +75,7 @@
 						/>
 					</FooterSection>
 					<!-- Newsletter Subscription -->
-					<div class="hidden lg:inline-block xl:hidden w-[321px]">
+					<div class="hidden md:inline-block 3xl:hidden w-[321px]">
 						<h4 class="font-sans font-semibold text-[#1b1d22] xl:text-[#323338] text-[14px] lg:text-[16px] xl:text-[18px] mb-[25px] lg:mb-[23px] xl:mb-[27px]">
 							Subscribe to Newsletter
 						</h4>
@@ -87,7 +93,7 @@
 				</div>
 
 				<!-- Newsletter Subscription -->
-				<div class=" lg:hidden w-full xl:w-[321px]">
+				<div class=" md:hidden w-full mobile:w-[321px] xs:justify-self-center xl:w-[321px]">
 					<h4 class="font-sans font-semibold text-[#1b1d22] xl:text-[#323338] text-[14px] lg:text-[16px] xl:text-[18px] mb-[25px] lg:mb-[23px] xl:mb-[27px]">
 						Subscribe to Newsletter
 					</h4>
@@ -103,7 +109,7 @@
 					</div>
 				</div>
 				<!-- Newsletter Subscription -->
-				<div class="hidden xl:inline-block shrink-0 w-[321px]">
+				<div class="hidden 3xl:inline-block shrink-0 w-[321px]">
 					<h4 class="font-sans font-semibold text-[#1b1d22] xl:text-[#323338] text-[14px] lg:text-[16px] xl:text-[18px] mb-[25px] lg:mb-[23px] xl:mb-[27px]">
 						Subscribe to Newsletter
 					</h4>

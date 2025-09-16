@@ -66,7 +66,7 @@
   --breakpoint-3xl: 1440px;
   --breakpoint-4xl: 1920px;
   
-  /* Font Families */
+  /* Font Families - Defined in tailwind.config.js */
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-satoshi: "Satoshi", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-dm-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -128,8 +128,8 @@
 /* Custom Container Utilities */
 .container-custom {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Custom container widths for specific breakpoints */
@@ -195,6 +195,7 @@
 @media (min-width: 1920px) {
   .container-custom {
     max-width: 1680px;
+    margin: 0 auto;
   }
 }
 
@@ -207,20 +208,6 @@
 .container-custom-no-padding {
   padding-left: 0;
   padding-right: 0;
-}
-
-.container-custom-tight {
-  --space-top: calc(var(--space-top) * 0.5);
-  --space-bottom: calc(var(--space-bottom) * 0.5);
-  --space-left: calc(var(--space-left) * 0.5);
-  --space-right: calc(var(--space-right) * 0.5);
-}
-
-.container-custom-loose {
-  --space-top: calc(var(--space-top) * 1.5);
-  --space-bottom: calc(var(--space-bottom) * 1.5);
-  --space-left: calc(var(--space-left) * 1.5);
-  --space-right: calc(var(--space-right) * 1.5);
 }
 
 /* Performance optimizations */

@@ -203,7 +203,9 @@ const MIN_TRANSLATE_X = -1000; // Minimum allowed translateX value
 // Computed properties
 const displayPartners = computed(() => {
 	// Check if we're on mobile or tablet to use mobile-tablet specific images
-	const isMobileOrTablet = windowWidth.value < 1024; // Mobile and tablet
+	// Default to desktop for SSR
+	const currentWidth = typeof window !== "undefined" ? windowWidth.value : 1024;
+	const isMobileOrTablet = currentWidth < 1024; // Mobile and tablet
 
 	// Create partners with mobile-tablet specific images if on mobile or tablet
 	const partnersWithMobileImages = props.partners.map((partner) => {
@@ -231,10 +233,10 @@ const displayPartners = computed(() => {
 
 	// Desktop: show all partners
 	// Tablet: show at least 5 partners (or all if less than 5)
-	if (windowWidth.value >= 1024) {
+	if (currentWidth >= 1024) {
 		return partnersWithMobileImages;
 	}
-	else if (windowWidth.value >= 768) {
+	else if (currentWidth >= 768) {
 		// Show at least 5 partners on tablet, or all if less than 5
 		return partnersWithMobileImages.slice(0, Math.max(5, partnersWithMobileImages.length));
 	}
@@ -252,7 +254,9 @@ const infinitePartners = computed(() => {
 	const duplicates = 6; // 6 sets of partners for smooth infinite loop
 
 	// Check if we're on mobile to use mobile-tablet specific images (only for mobile slider)
-	const isMobile = windowWidth.value < 768; // Only mobile
+	// Default to desktop for SSR
+	const currentWidth = typeof window !== "undefined" ? windowWidth.value : 1024;
+	const isMobile = currentWidth < 768; // Only mobile
 
 	// Create partners with mobile-tablet specific images if on mobile
 	const partnersWithMobileImages = props.partners.map((partner) => {
@@ -283,8 +287,10 @@ const infinitePartners = computed(() => {
 
 // Dynamic logo styles based on props
 const logoStyles = computed(() => {
-	const isMobile = windowWidth.value < 768;
-	const isTablet = windowWidth.value >= 768 && windowWidth.value < 1024;
+	// Default to desktop values for SSR
+	const currentWidth = typeof window !== "undefined" ? windowWidth.value : 1024;
+	const isMobile = currentWidth < 768;
+	const isTablet = currentWidth >= 768 && currentWidth < 1024;
 
 	let height, maxWidth, spacing;
 
@@ -435,7 +441,7 @@ const stopAutoPlay = () => {
 let resizeObserver: ResizeObserver | null = null;
 
 // Force reactivity for window resize
-const windowWidth = ref(window.innerWidth);
+const windowWidth = ref(typeof window !== "undefined" ? window.innerWidth : 1024);
 
 // Watch for window width changes to start/stop slider
 watch(windowWidth, (newWidth, oldWidth) => {
@@ -463,8 +469,10 @@ const handleResize = () => {
 	}
 
 	resizeTimeout = setTimeout(() => {
-		windowWidth.value = window.innerWidth;
-		updateCachedWidths();
+		if (typeof window !== "undefined") {
+			windowWidth.value = window.innerWidth;
+			updateCachedWidths();
+		}
 	}, 100); // 100ms debounce
 };
 
@@ -506,8 +514,10 @@ onMounted(() => {
 		resizeObserver.observe(sliderContainer.value);
 	}
 
-	// Add window resize listener
-	window.addEventListener("resize", handleResize);
+	// Add window resize listener (only on client side)
+	if (typeof window !== "undefined") {
+		window.addEventListener("resize", handleResize);
+	}
 
 	startAutoPlay();
 });
@@ -517,8 +527,10 @@ onUnmounted(() => {
 	if (resizeObserver) {
 		resizeObserver.disconnect();
 	}
-	// Remove window resize listener
-	window.removeEventListener("resize", handleResize);
+	// Remove window resize listener (only on client side)
+	if (typeof window !== "undefined") {
+		window.removeEventListener("resize", handleResize);
+	}
 	// Clear resize timeout
 	if (resizeTimeout) {
 		clearTimeout(resizeTimeout);

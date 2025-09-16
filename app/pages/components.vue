@@ -94,6 +94,14 @@
 			>
 				<ThemeShowcase />
 			</div>
+
+			<!-- Breakpoint Test -->
+			<div
+				v-if="activeTab === 'breakpoint-test'"
+				class="container-custom"
+			>
+				<BreakpointTest />
+			</div>
 		</div>
 	</div>
 </template>
@@ -109,6 +117,7 @@ import NavLinkShowcase from "~/components/ui/NavLinkShowcase.vue";
 import SectionTitleShowcase from "~/components/ui/SectionTitleShowcase.vue";
 import TrustedPartnersShowcase from "~/components/ui/TrustedPartnersShowcase.vue";
 import ThemeShowcase from "~/components/system-design/ThemeShowcase.vue";
+import BreakpointTest from "~/components/BreakpointTest.vue";
 
 // Set page meta
 definePageMeta({
@@ -128,5 +137,6 @@ const tabs = [
 	{ id: "section-title", name: "Section Title" },
 	{ id: "trusted-partners", name: "Trusted Partners" },
 	{ id: "theme", name: "Complete Theme" },
+	{ id: "breakpoint-test", name: "Breakpoint Test" },
 ];
 </script>
