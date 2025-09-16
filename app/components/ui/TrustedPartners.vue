@@ -19,7 +19,7 @@
 					:style="{ gap: logoStyles.spacing }"
 				>
 					<div
-						v-for="(partner, index) in displayPartners"
+						v-for="partner in displayPartners"
 						:key="partner.id"
 						class="partner-logo-container"
 						:class="logoClasses"
@@ -85,14 +85,18 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted, watch } from "vue";
 
+// Define partner interface
+interface Partner {
+	id: string;
+	name: string;
+	logo: string;
+	website?: string;
+	fallbackLogo?: string;
+}
+
 // Define component props
 interface Props {
-	partners?: Array<{
-		id: string;
-		name: string;
-		logo: string;
-		website?: string;
-	}>;
+	partners?: Partner[];
 	showTitle?: boolean;
 	title?: string;
 	subtitle?: string;
@@ -465,7 +469,7 @@ const handleResize = () => {
 };
 
 // Handle image loading errors with fallback
-const handleImageError = (event: Event, partner: any) => {
+const handleImageError = (event: Event, partner: Partner) => {
 	const img = event.target as HTMLImageElement;
 
 	// If we have a fallback logo, use it

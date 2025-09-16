@@ -197,7 +197,7 @@
 					<!-- Mobile Preview -->
 					<div class="bg-white rounded-lg shadow-sm p-6">
 						<h4 class="text-lg font-semibold text-gray-800 mb-4">
-							Mobile (< 768px)
+							Mobile (&lt; 768px)
 						</h4>
 						<p class="text-sm text-gray-600 mb-4">
 							Shows partner logos in a smooth infinite horizontal slider with touch/swipe support and mobile-optimized images

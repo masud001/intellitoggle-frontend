@@ -119,8 +119,8 @@ interface Props {
 	loadingText?: string;
 
 	// Icons (can be string for emojis or component)
-	leftIcon?: string | any;
-	rightIcon?: string | any;
+	leftIcon?: string | object;
+	rightIcon?: string | object;
 
 	// HTML attributes
 	type?: "button" | "submit" | "reset";
@@ -140,8 +140,8 @@ const props = withDefaults(defineProps<Props>(), {
 	loading: false,
 	disabled: false,
 	loadingText: "",
-	leftIcon: null,
-	rightIcon: null,
+	leftIcon: undefined,
+	rightIcon: undefined,
 	type: "button",
 	tag: "button",
 	href: "",

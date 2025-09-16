@@ -1,15 +1,16 @@
 // Plugin to ensure components are properly registered
+// @ts-expect-error - defineNuxtPlugin is provided by Nuxt
 export default defineNuxtPlugin(() => {
 	// This plugin runs on the client side to ensure components are available
 	console.log("Components plugin loaded");
 
-	// Force component registration
-	const { $router } = useNuxtApp();
-
-	// Ensure proper hydration
-	if (import.meta.client) {
-		nextTick(() => {
-			console.log("Client-side hydration completed");
+	// Ensure proper hydration on client side
+	if (typeof window !== "undefined") {
+		// Use nextTick from Vue
+		import("vue").then(({ nextTick }) => {
+			nextTick(() => {
+				console.log("Client-side hydration completed");
+			});
 		});
 	}
 });
