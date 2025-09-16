@@ -31,12 +31,24 @@
 			@primary-click="handleGetStarted"
 			@secondary-click="handleLearnMore"
 		/>
+
+		<!-- Control & Power Section -->
+		<ControlPowerSection />
+
+		<!-- OpenFeature Section -->
+		<OpenFeatureSection />
+
+		<!-- What Is IntelliToggle Section -->
+		<WhatIsIntelliToggleSection />
 	</div>
 </template>
 
 <script setup>
 import TrustedPartners from "~/components/ui/TrustedPartners.vue";
 import SimpleSection from "~/components/SimpleSection.vue";
+import ControlPowerSection from "~/components/ControlPowerSection.vue";
+import OpenFeatureSection from "~/components/OpenFeatureSection.vue";
+import WhatIsIntelliToggleSection from "~/components/WhatIsIntelliToggleSection.vue";
 
 // Button click handlers
 const handleGetStarted = () => {
