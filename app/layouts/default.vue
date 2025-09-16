@@ -1,11 +1,11 @@
 <template>
-  <div class="relative">
-    <Header :key="$route.path" />
-    <main>
-      <slot />
-    </main>
-    <Footer />
-  </div>
+	<div class="relative">
+		<Header />
+		<main>
+			<slot />
+		</main>
+		<Footer />
+	</div>
 </template>
 
 <script setup>

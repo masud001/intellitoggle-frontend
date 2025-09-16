@@ -1,9 +1,12 @@
 <template>
-  <ErrorBoundary>
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-  </ErrorBoundary>
+	<ErrorBoundary>
+		<!-- Full page loader -->
+		<Loader />
+
+		<NuxtLayout>
+			<NuxtPage />
+		</NuxtLayout>
+	</ErrorBoundary>
 </template>
 
 <script setup>
