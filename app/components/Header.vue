@@ -12,7 +12,7 @@
 						class="w-full h-full"
 					>
 						<nuxt-img
-							:src="isSticky ? '/images/logo-dark.svg' : '/images/logo-white.svg'"
+							:src="isSticky ? '/images/logo-white.svg' : '/images/logo-white.svg'"
 							alt="IntelliToggle"
 							class="w-[80px] h-[32px] lg:w-[205.5px] lg:h-[50.8px]"
 							width="205.5"
@@ -27,28 +27,28 @@
 					<NavLink
 						to="/"
 						:active="currentPath === '/'"
-						:class="isSticky ? 'nav-link custom-text' : 'nav-link'"
+						:class="isSticky ? 'nav-link' : 'nav-link'"
 					>
 						Home
 					</NavLink>
 					<NavLink
 						to="/about"
 						:active="currentPath === '/about'"
-						:class="isSticky ? 'nav-link custom-text' : 'nav-link'"
+						:class="isSticky ? 'nav-link' : 'nav-link'"
 					>
 						About
 					</NavLink>
 					<NavLink
 						to="/pricing"
 						:active="currentPath === '/pricing'"
-						:class="isSticky ? 'nav-link custom-text' : 'nav-link'"
+						:class="isSticky ? 'nav-link' : 'nav-link'"
 					>
 						Pricing
 					</NavLink>
 					<NavLink
 						to="/components"
 						:active="currentPath === '/components'"
-						:class="isSticky ? 'nav-link custom-text' : 'nav-link'"
+						:class="isSticky ? 'nav-link' : 'nav-link'"
 					>
 						Components
 					</NavLink>
@@ -69,72 +69,119 @@
 				<!-- Mobile Menu Button (320px - 1023px) -->
 				<div class="lg:hidden ml-auto">
 					<button
-						class="text-gray-300 w-[24px] h-[24px] hover:text-white transition-colors border-0 p-0"
+						class="relative w-[32px] h-[32px] flex items-center justify-center rounded-lg hover:bg-white/10 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white/20"
 						@click="mobileMenuOpen = !mobileMenuOpen"
+						:aria-expanded="mobileMenuOpen"
+						aria-label="Toggle mobile menu"
 					>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							class="w-6 h-6 transition-colors duration-200"
-							fill="none"
-							stroke="currentColor"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-						>
-
-							<path d="M4 6h16M4 12h16M4 18h7" />
-						</svg>
+						<!-- Animated Hamburger Icon -->
+						<div class="relative w-6 h-6">
+							<!-- Top line -->
+							<span
+								class="absolute top-1 left-0 w-6 h-0.5 bg-current transition-all duration-300 ease-in-out"
+								:class="mobileMenuOpen ? 'rotate-45 translate-y-2.5' : 'translate-y-0'"
+							></span>
+							<!-- Middle line -->
+							<span
+								class="absolute top-3 left-0 w-6 h-0.5 bg-current transition-all duration-300 ease-in-out"
+								:class="mobileMenuOpen ? 'opacity-0' : 'opacity-100'"
+							></span>
+							<!-- Bottom line -->
+							<span
+								class="absolute top-5 left-0 w-6 h-0.5 bg-current transition-all duration-300 ease-in-out"
+								:class="mobileMenuOpen ? '-rotate-45 -translate-y-2.5' : 'translate-y-0'"
+							></span>
+						</div>
 					</button>
 				</div>
 			</div>
 
-			<!-- Mobile Navigation (320px - 1023px) -->
+			<!-- Mobile Navigation Dropdown (320px - 1023px) -->
 			<ClientOnly>
-				<div
-					v-if="mobileMenuOpen"
-					class="lg:hidden border-t border-gray-700 py-4"
+				<!-- Backdrop -->
+				<Transition
+					enter-active-class="transition-opacity duration-300 ease-out"
+					enter-from-class="opacity-0"
+					enter-to-class="opacity-100"
+					leave-active-class="transition-opacity duration-300 ease-in"
+					leave-from-class="opacity-100"
+					leave-to-class="opacity-0"
 				>
-					<nav class="flex flex-col space-y-4">
-						<NavLink
-							to="/"
-							:active="currentPath === '/'"
-							:class="isSticky ? 'nav-link custom-text' : 'nav-link'"
-							@click="mobileMenuOpen = false"
-						>
-							Home
-						</NavLink>
-						<NavLink
-							to="/about"
-							:active="currentPath === '/about'"
-							:class="isSticky ? 'nav-link custom-text' : 'nav-link'"
-							@click="mobileMenuOpen = false"
-						>
-							About
-						</NavLink>
-						<NavLink
-							to="/pricing"
-							:active="currentPath === '/pricing'"
-							:class="isSticky ? 'nav-link custom-text' : 'nav-link'"
-							@click="mobileMenuOpen = false"
-						>
-							Pricing
-						</NavLink>
-						<NavLink
-							to="/components"
-							:active="currentPath === '/components'"
-							:class="isSticky ? 'nav-link custom-text' : 'nav-link'"
-							@click="mobileMenuOpen = false"
-						>
-							Components
-						</NavLink>
-						<Button variant="sandbox">
-							Start Sandbox
-						</Button>
-					</nav>
-				</div>
+					<div
+						v-if="mobileMenuOpen"
+						class="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 lg:hidden"
+						@click="mobileMenuOpen = false"
+					></div>
+				</Transition>
+
+				<!-- Mobile Menu Dropdown -->
+				<Transition
+					enter-active-class="transition-all duration-300 ease-out"
+					enter-from-class="opacity-0 -translate-y-4 scale-95"
+					enter-to-class="opacity-100 translate-y-0 scale-100"
+					leave-active-class="transition-all duration-200 ease-in"
+					leave-from-class="opacity-100 translate-y-0 scale-100"
+					leave-to-class="opacity-0 -translate-y-4 scale-95"
+				>
+					<div
+						v-if="mobileMenuOpen"
+						class="lg:hidden absolute top-full left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-xl"
+						:class="isSticky ? 'bg-white/95' : 'bg-gradient-to-b from-white/95 to-white/90'"
+					>
+						<div class="container-custom py-6">
+							<nav class="flex flex-col space-y-6">
+								<!-- Navigation Links -->
+								<div class="space-y-4">
+									<NavLink
+										to="/"
+										:active="currentPath === '/'"
+										:class="isSticky ? 'nav-link custom-text' : 'nav-link'"
+										@click="mobileMenuOpen = false"
+									>
+										Home
+									</NavLink>
+									<NavLink
+										to="/about"
+										:active="currentPath === '/about'"
+										:class="isSticky ? 'nav-link custom-text' : 'nav-link'"
+										@click="mobileMenuOpen = false"
+									>
+										About
+									</NavLink>
+									<NavLink
+										to="/pricing"
+										:active="currentPath === '/pricing'"
+										:class="isSticky ? 'nav-link custom-text' : 'nav-link'"
+										@click="mobileMenuOpen = false"
+									>
+										Pricing
+									</NavLink>
+									<NavLink
+										to="/components"
+										:active="currentPath === '/components'"
+										:class="isSticky ? 'nav-link custom-text' : 'nav-link'"
+										@click="mobileMenuOpen = false"
+									>
+										Components
+									</NavLink>
+								</div>
+
+								<!-- CTA Button -->
+								<div class="pt-2">
+									<Button 
+										variant="primary"
+										button-class="w-full py-3 px-6 text-center"
+										text-class="text-lg font-semibold"
+										@click="mobileMenuOpen = false"
+									>
+										Start Sandbox
+									</Button>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</Transition>
+
 				<template #fallback>
 					<div class="lg:hidden border-t border-gray-700 py-4">
 						<nav class="flex flex-col space-y-4">
@@ -143,7 +190,7 @@
 								:active="currentPath === '/'"
 								:class="isSticky ? 'nav-link custom-text' : 'nav-link'"
 							>
-								Home 1
+								Home
 							</NavLink>
 							<NavLink
 								to="/about"
@@ -166,7 +213,7 @@
 							>
 								Components
 							</NavLink>
-							<Button variant="sandbox">
+							<Button variant="primary">
 								Start Sandbox
 							</Button>
 						</nav>
@@ -201,18 +248,27 @@ watch(() => route.path, () => {
 	mobileMenuOpen.value = false;
 });
 
+// Handle escape key to close mobile menu
+const handleKeydown = (event) => {
+	if (event.key === 'Escape' && mobileMenuOpen.value) {
+		mobileMenuOpen.value = false;
+	}
+};
+
 // Add scroll listener and initialize sticky state
 onMounted(() => {
 	if (import.meta.client) {
 		// Initialize sticky state based on current scroll position
 		isSticky.value = window.scrollY > 50;
 		window.addEventListener("scroll", handleScroll);
+		window.addEventListener("keydown", handleKeydown);
 	}
 });
 
 onUnmounted(() => {
 	if (import.meta.client) {
 		window.removeEventListener("scroll", handleScroll);
+		window.removeEventListener("keydown", handleKeydown);
 	}
 });
 </script>
@@ -226,7 +282,7 @@ onUnmounted(() => {
 
 /* Sticky header state - solid background with backdrop blur */
 .sticky-header {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(72, 61, 139,0.96);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
@@ -268,5 +324,62 @@ onUnmounted(() => {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* Mobile menu animations */
+.mobile-menu-enter-active,
+.mobile-menu-leave-active {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-enter-from {
+  opacity: 0;
+  transform: translateY(-10px) scale(0.95);
+}
+
+.mobile-menu-leave-to {
+  opacity: 0;
+  transform: translateY(-10px) scale(0.95);
+}
+
+/* Backdrop animations */
+.backdrop-enter-active,
+.backdrop-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.backdrop-enter-from,
+.backdrop-leave-to {
+  opacity: 0;
+}
+
+/* Mobile menu link hover effects */
+@media (max-width: 1023px) {
+  .nav-link {
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: rgba(243, 244, 246, 0.8);
+    transform: scale(1.05);
+  }
+  
+  .nav-link.custom-text:hover {
+    background: linear-gradient(to right, rgba(147, 51, 234, 0.1), rgba(59, 130, 246, 0.1));
+  }
+}
+
+/* Hamburger animation improvements */
+.hamburger-line {
+  transform-origin: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Focus states for accessibility */
+button:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.3);
+  outline-offset: 2px;
 }
 </style>
