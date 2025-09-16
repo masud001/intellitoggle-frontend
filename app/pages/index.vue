@@ -21,11 +21,33 @@
 
 		<!-- Trusted Partners Section -->
 		<TrustedPartners />
+
+		<!-- Simple Section with Background Pattern -->
+		<SimpleSection
+			title="Launch Features Confidently With AI Driven Feature Flags"
+			subtitle="Start for free, scale as your team grows."
+			primary-button-text="Start for $1/mo"
+			secondary-button-text="Join AI Early Access"
+			@primary-click="handleGetStarted"
+			@secondary-click="handleLearnMore"
+		/>
 	</div>
 </template>
 
 <script setup>
 import TrustedPartners from "~/components/ui/TrustedPartners.vue";
+import SimpleSection from "~/components/SimpleSection.vue";
+
+// Button click handlers
+const handleGetStarted = () => {
+	console.log("Get Started clicked");
+	// Add your navigation logic here
+};
+
+const handleLearnMore = () => {
+	console.log("Learn More clicked");
+	// Add your navigation logic here
+};
 
 // Home page component
 useHead({

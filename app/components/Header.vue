@@ -70,40 +70,43 @@
 				<div class="lg:hidden ml-auto">
 					<button
 						class="relative w-[24px] h-[24px] flex items-center justify-center rounded-lg hover:bg-white/10 transition-all duration-200 focus:outline-none focus:ring-0"
-						@click="mobileMenuOpen = !mobileMenuOpen"
 						:aria-expanded="mobileMenuOpen"
 						aria-label="Toggle mobile menu"
+						@click="mobileMenuOpen = !mobileMenuOpen"
 					>
 						<!-- Custom Mobile Menu Icon -->
-						<div class="relative w-6 h-6 transition-transform duration-300" :class="mobileMenuOpen ? 'rotate-180' : 'rotate-0'">
-							<svg 
-								xmlns="http://www.w3.org/2000/svg" 
-								width="24" 
-								height="24" 
+						<div
+							class="relative w-6 h-6 transition-transform duration-300"
+							:class="mobileMenuOpen ? 'rotate-180' : 'rotate-0'"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
 								viewBox="0 0 24 24"
 								class="w-6 h-6 text-white transition-all duration-300"
 								:class="mobileMenuOpen ? 'opacity-0 scale-75' : 'opacity-100 scale-100'"
-								fill="none" 
-								stroke="currentColor" 
-								stroke-linecap="round" 
-								stroke-linejoin="round" 
+								fill="none"
+								stroke="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
 								stroke-width="2"
 							>
 								<path d="M4 6h16M4 12h16M4 18h7" />
 							</svg>
-							
+
 							<!-- Close Icon (X) -->
-							<svg 
-								xmlns="http://www.w3.org/2000/svg" 
-								width="24" 
-								height="24" 
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
 								viewBox="0 0 24 24"
 								class="absolute top-0 left-0 w-6 h-6 text-white transition-all duration-300"
 								:class="mobileMenuOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-75'"
-								fill="none" 
-								stroke="currentColor" 
-								stroke-linecap="round" 
-								stroke-linejoin="round" 
+								fill="none"
+								stroke="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
 								stroke-width="2"
 							>
 								<path d="M18 6L6 18M6 6l12 12" />
@@ -168,7 +171,7 @@
 
 								<!-- CTA Button -->
 								<div class="pt-2">
-									<Button 
+									<Button
 										variant="primary"
 										button-class="w-full py-3 px-6 text-center"
 										text-class="text-lg font-semibold"
@@ -250,7 +253,7 @@ watch(() => route.path, () => {
 
 // Handle escape key to close mobile menu
 const handleKeydown = (event) => {
-	if (event.key === 'Escape' && mobileMenuOpen.value) {
+	if (event.key === "Escape" && mobileMenuOpen.value) {
 		mobileMenuOpen.value = false;
 	}
 };
@@ -360,12 +363,12 @@ onUnmounted(() => {
     border-radius: 0.5rem;
     transition: all 0.2s ease;
   }
-  
+
   .nav-link:hover {
     background-color: rgba(243, 244, 246, 0.8);
     transform: scale(1.05);
   }
-  
+
   .nav-link.custom-text:hover {
     background: linear-gradient(to right, rgba(147, 51, 234, 0.1), rgba(59, 130, 246, 0.1));
   }
