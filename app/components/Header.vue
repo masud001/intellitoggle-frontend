@@ -69,28 +69,45 @@
 				<!-- Mobile Menu Button (320px - 1023px) -->
 				<div class="lg:hidden ml-auto">
 					<button
-						class="relative w-[32px] h-[32px] flex items-center justify-center rounded-lg hover:bg-white/10 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white/20"
+						class="relative w-[24px] h-[24px] flex items-center justify-center rounded-lg hover:bg-white/10 transition-all duration-200 focus:outline-none focus:ring-0"
 						@click="mobileMenuOpen = !mobileMenuOpen"
 						:aria-expanded="mobileMenuOpen"
 						aria-label="Toggle mobile menu"
 					>
-						<!-- Animated Hamburger Icon -->
-						<div class="relative w-6 h-6">
-							<!-- Top line -->
-							<span
-								class="absolute top-1 left-0 w-6 h-0.5 bg-current transition-all duration-300 ease-in-out"
-								:class="mobileMenuOpen ? 'rotate-45 translate-y-2.5' : 'translate-y-0'"
-							></span>
-							<!-- Middle line -->
-							<span
-								class="absolute top-3 left-0 w-6 h-0.5 bg-current transition-all duration-300 ease-in-out"
-								:class="mobileMenuOpen ? 'opacity-0' : 'opacity-100'"
-							></span>
-							<!-- Bottom line -->
-							<span
-								class="absolute top-5 left-0 w-6 h-0.5 bg-current transition-all duration-300 ease-in-out"
-								:class="mobileMenuOpen ? '-rotate-45 -translate-y-2.5' : 'translate-y-0'"
-							></span>
+						<!-- Custom Mobile Menu Icon -->
+						<div class="relative w-6 h-6 transition-transform duration-300" :class="mobileMenuOpen ? 'rotate-180' : 'rotate-0'">
+							<svg 
+								xmlns="http://www.w3.org/2000/svg" 
+								width="24" 
+								height="24" 
+								viewBox="0 0 24 24"
+								class="w-6 h-6 text-white transition-all duration-300"
+								:class="mobileMenuOpen ? 'opacity-0 scale-75' : 'opacity-100 scale-100'"
+								fill="none" 
+								stroke="currentColor" 
+								stroke-linecap="round" 
+								stroke-linejoin="round" 
+								stroke-width="2"
+							>
+								<path d="M4 6h16M4 12h16M4 18h7" />
+							</svg>
+							
+							<!-- Close Icon (X) -->
+							<svg 
+								xmlns="http://www.w3.org/2000/svg" 
+								width="24" 
+								height="24" 
+								viewBox="0 0 24 24"
+								class="absolute top-0 left-0 w-6 h-6 text-white transition-all duration-300"
+								:class="mobileMenuOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-75'"
+								fill="none" 
+								stroke="currentColor" 
+								stroke-linecap="round" 
+								stroke-linejoin="round" 
+								stroke-width="2"
+							>
+								<path d="M18 6L6 18M6 6l12 12" />
+							</svg>
 						</div>
 					</button>
 				</div>
@@ -98,22 +115,6 @@
 
 			<!-- Mobile Navigation Dropdown (320px - 1023px) -->
 			<ClientOnly>
-				<!-- Backdrop -->
-				<Transition
-					enter-active-class="transition-opacity duration-300 ease-out"
-					enter-from-class="opacity-0"
-					enter-to-class="opacity-100"
-					leave-active-class="transition-opacity duration-300 ease-in"
-					leave-from-class="opacity-100"
-					leave-to-class="opacity-0"
-				>
-					<div
-						v-if="mobileMenuOpen"
-						class="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 lg:hidden"
-						@click="mobileMenuOpen = false"
-					></div>
-				</Transition>
-
 				<!-- Mobile Menu Dropdown -->
 				<Transition
 					enter-active-class="transition-all duration-300 ease-out"
@@ -125,8 +126,7 @@
 				>
 					<div
 						v-if="mobileMenuOpen"
-						class="lg:hidden absolute top-full left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-xl"
-						:class="isSticky ? 'bg-white/95' : 'bg-gradient-to-b from-white/95 to-white/90'"
+						class="lg:hidden absolute top-full left-0 right-0 z-50 bg-white backdrop-blur-md border-t border-gray-200 shadow-xl"
 					>
 						<div class="container-custom py-6">
 							<nav class="flex flex-col space-y-6">
@@ -135,7 +135,7 @@
 									<NavLink
 										to="/"
 										:active="currentPath === '/'"
-										:class="isSticky ? 'nav-link custom-text' : 'nav-link'"
+										class="nav-link custom-text"
 										@click="mobileMenuOpen = false"
 									>
 										Home
@@ -143,7 +143,7 @@
 									<NavLink
 										to="/about"
 										:active="currentPath === '/about'"
-										:class="isSticky ? 'nav-link custom-text' : 'nav-link'"
+										class="nav-link custom-text"
 										@click="mobileMenuOpen = false"
 									>
 										About
@@ -151,7 +151,7 @@
 									<NavLink
 										to="/pricing"
 										:active="currentPath === '/pricing'"
-										:class="isSticky ? 'nav-link custom-text' : 'nav-link'"
+										class="nav-link custom-text"
 										@click="mobileMenuOpen = false"
 									>
 										Pricing
@@ -159,7 +159,7 @@
 									<NavLink
 										to="/components"
 										:active="currentPath === '/components'"
-										:class="isSticky ? 'nav-link custom-text' : 'nav-link'"
+										class="nav-link custom-text"
 										@click="mobileMenuOpen = false"
 									>
 										Components
@@ -371,8 +371,8 @@ onUnmounted(() => {
   }
 }
 
-/* Hamburger animation improvements */
-.hamburger-line {
+/* Mobile menu icon animations */
+.mobile-menu-icon {
   transform-origin: center;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
