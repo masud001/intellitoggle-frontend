@@ -102,18 +102,18 @@ interface Props {
 	subtitle?: string;
 	class?: string;
 	// Image size customization
-	logoHeight?: () => {
+	logoHeight?: {
 		mobile?: string;
 		tablet?: string;
 		desktop?: string;
 	};
-	logoMaxWidth?: () => {
+	logoMaxWidth?: {
 		mobile?: string;
 		tablet?: string;
 		desktop?: string;
 	};
 	// Spacing customization
-	logoSpacing?: () => {
+	logoSpacing?: {
 		mobile?: string;
 		tablet?: string;
 		desktop?: string;
@@ -162,23 +162,7 @@ const props = withDefaults(defineProps<Props>(), {
 	title: "Trusted by various engineering teams",
 	subtitle: "",
 	class: "",
-	// Default image sizes
-	logoHeight: () => ({
-		mobile: "60px",
-		tablet: "60px",
-		desktop: "60px",
-	}),
-	logoMaxWidth: () => ({
-		mobile: "120px",
-		tablet: "120px",
-		desktop: "120px",
-	}),
-	// Default spacing
-	logoSpacing: () => ({
-		mobile: "53px",
-		tablet: "50px",
-		desktop: "100px",
-	}),
+	// Default values will be handled in computed property
 	// Auto-slide settings
 	autoSlide: true,
 	slideInterval: 3000,
@@ -295,19 +279,19 @@ const logoStyles = computed(() => {
 	let height, maxWidth, spacing;
 
 	if (isMobile) {
-		height = props.logoHeight?.()?.mobile || "60px";
-		maxWidth = props.logoMaxWidth?.()?.mobile || "120px";
-		spacing = props.logoSpacing?.()?.mobile || "53px";
+		height = props.logoHeight?.mobile || "60px";
+		maxWidth = props.logoMaxWidth?.mobile || "120px";
+		spacing = props.logoSpacing?.mobile || "53px";
 	}
 	else if (isTablet) {
-		height = props.logoHeight?.()?.tablet || "60px";
-		maxWidth = props.logoMaxWidth?.()?.tablet || "120px";
-		spacing = props.logoSpacing?.()?.tablet || "50px";
+		height = props.logoHeight?.tablet || "60px";
+		maxWidth = props.logoMaxWidth?.tablet || "120px";
+		spacing = props.logoSpacing?.tablet || "50px";
 	}
 	else {
-		height = props.logoHeight?.()?.desktop || "60px";
-		maxWidth = props.logoMaxWidth?.()?.desktop || "120px";
-		spacing = props.logoSpacing?.()?.desktop || "100px";
+		height = props.logoHeight?.desktop || "60px";
+		maxWidth = props.logoMaxWidth?.desktop || "120px";
+		spacing = props.logoSpacing?.desktop || "100px";
 	}
 
 	return {
