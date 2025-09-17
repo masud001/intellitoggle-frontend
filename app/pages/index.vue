@@ -22,6 +22,21 @@
 		<!-- Trusted Partners Section -->
 		<TrustedPartners />
 
+		<!-- What Is IntelliToggle Section -->
+		<WhatIsIntelliToggleSection />
+
+		<!-- Control & Power Section -->
+		<ControlPowerSection />
+
+		<!-- OpenFeature Section -->
+		<OpenFeatureSection />
+
+		<!-- Dart Powered Feature Flag Section -->
+		<DartPoweredFeatureFlagSection />
+
+		<!-- Pricing Section -->
+		<PricingSection @subscribe="handleSubscribe" />
+
 		<!-- Simple Section with Background Pattern -->
 		<SimpleSection
 			title="Launch Features Confidently With AI Driven Feature Flags"
@@ -31,15 +46,6 @@
 			@primary-click="handleGetStarted"
 			@secondary-click="handleLearnMore"
 		/>
-
-		<!-- Control & Power Section -->
-		<ControlPowerSection />
-
-		<!-- OpenFeature Section -->
-		<OpenFeatureSection />
-
-		<!-- What Is IntelliToggle Section -->
-		<WhatIsIntelliToggleSection />
 	</div>
 </template>
 
@@ -49,6 +55,8 @@ import SimpleSection from "~/components/SimpleSection.vue";
 import ControlPowerSection from "~/components/ControlPowerSection.vue";
 import OpenFeatureSection from "~/components/OpenFeatureSection.vue";
 import WhatIsIntelliToggleSection from "~/components/WhatIsIntelliToggleSection.vue";
+import DartPoweredFeatureFlagSection from "~/components/DartPoweredFeatureFlagSection.vue";
+import PricingSection from "~/components/PricingSection.vue";
 
 // Button click handlers
 const handleGetStarted = () => {
@@ -59,6 +67,11 @@ const handleGetStarted = () => {
 const handleLearnMore = () => {
 	console.log("Learn More clicked");
 	// Add your navigation logic here
+};
+
+const handleSubscribe = () => {
+	console.log("Subscribe clicked");
+	// Add your subscription logic here
 };
 
 // Home page component

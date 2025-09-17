@@ -71,21 +71,27 @@
   --font-satoshi: "Satoshi", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-dm-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-merriweather-sans: "Merriweather Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-segoe-ui-this: "Segoe UI This", "Segoe UI", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+		--font-roboto: "Roboto", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+		--font-plus-jakarta-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+		--font-segoe-ui-this: "Segoe UI This", "Segoe UI", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   
   /* Font Feature Settings */
   --font-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   --font-satoshi--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   --font-dm-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   --font-merriweather-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-  --font-segoe-ui-this--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+		--font-roboto--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+		--font-plus-jakarta-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+		--font-segoe-ui-this--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   
   /* Font Variation Settings */
   --font-sans--font-variation-settings: "opsz" 32;
   --font-satoshi--font-variation-settings: "opsz" 32;
   --font-dm-sans--font-variation-settings: "opsz" 32;
   --font-merriweather-sans--font-variation-settings: "opsz" 32;
-  --font-segoe-ui-this--font-variation-settings: "opsz" 32;
+		--font-roboto--font-variation-settings: "opsz" 32;
+		--font-plus-jakarta-sans--font-variation-settings: "opsz" 32;
+		--font-segoe-ui-this--font-variation-settings: "opsz" 32;
 }
 
 /* Custom Font Utilities */
@@ -107,6 +113,18 @@
   font-variation-settings: var(--font-merriweather-sans--font-variation-settings);
 }
 
+.font-roboto {
+  font-family: var(--font-roboto);
+  font-feature-settings: var(--font-roboto--font-feature-settings);
+  font-variation-settings: var(--font-roboto--font-variation-settings);
+}
+
+.font-plus-jakarta-sans {
+  font-family: var(--font-plus-jakarta-sans);
+  font-feature-settings: var(--font-plus-jakarta-sans--font-feature-settings);
+  font-variation-settings: var(--font-plus-jakarta-sans--font-variation-settings);
+}
+
 .font-segoe-ui-this {
   font-family: var(--font-segoe-ui-this);
   font-feature-settings: var(--font-segoe-ui-this--font-feature-settings);
@@ -118,6 +136,8 @@
 .font-satoshi,
 .font-dm-sans,
 .font-merriweather-sans,
+.font-roboto,
+.font-plus-jakarta-sans,
 .font-segoe-ui-this {
   font-display: swap;
   text-rendering: optimizeLegibility;

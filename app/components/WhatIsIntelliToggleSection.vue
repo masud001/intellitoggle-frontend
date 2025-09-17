@@ -2,7 +2,7 @@
 	<section class="what-is-intellitoggle-section py-16 lg:py-24 xl:py-32 bg-white">
 		<div class="container-custom">
 			<!-- Section Title -->
-			<div class="text-center mb-[16px] md:mb-[48px]">
+			<div class="text-center mb-[16px] md:mb-[48px] hidden md:block">
 				<SectionTitle
 					variant="gradient"
 					size="3xl"
@@ -14,33 +14,37 @@
 			</div>
 
 			<!-- Desktop Layout (Text left, Image right) -->
-			<div class="hidden lg:block">
-				<div class="grid grid-cols-2 gap-12 xl:gap-16 items-center">
+			<div class="">
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-[42px]  items-center">
 					<!-- Text Content -->
-					<div class="text-content">
-						<h2 class="main-title mb-6">
+					<div class="2xl:w-[623px]">
+						<h2 class=" hidden md:block font-sans font-semibold xl:text-[32px] md:text-[24px] text-[#1b1d22] mb-[16px]">
 							Your AI Dart App's Control Panel For Feature Releases
 						</h2>
-						<p class="description mb-8">
+						<SectionTitle
+							align="left"
+							variant="gradient"
+							class="font-satoshi font-bold text-[26px] md:hidden mb-[16px]"
+						>
+							Your AI Dart App's Control Panel For Feature Releases
+						</SectionTitle>
+						<p class=" font-sans text-[14px] xl:text-[18px] font-normal text-[#5f5f60] md:font-medium xl:font-normal mb-[8px]">
 							IntelliToggle is a 'Dart-Powered' feature flag that lets you turn features on/off instantly in your application without redeploying code. It allows you control roll-outs, run experiments, and fix bugs faster.
 						</p>
 
 						<!-- Benefits Section -->
-						<div class="benefits-section">
-							<h3 class="benefits-title mb-4">
+						<div class="">
+							<h3 class=" font-sans text-[18px] font-semibold text-[#1b1d22] md:text-[#323338] md:text-[22px] xl:text-[24px] xl:text-[#0e121b] mb-[8px]">
 								Benefits
 							</h3>
-							<ul class="benefits-list">
-								<li class="benefit-item">
-									<span class="benefit-icon">✓</span>
+							<ul class="list-disc relative pl-6">
+								<li class=" font-sans text-[14px] font-normal text-[#5f5f60] md:font-medium xl:font-normal xl:text-[18px]">
 									Toggle new features without app updates
 								</li>
-								<li class="benefit-item">
-									<span class="benefit-icon">✓</span>
+								<li class=" font-sans text-[14px] font-normal text-[#5f5f60] md:font-medium xl:font-normal xl:text-[18px]">
 									Roll out to specific users or regions
 								</li>
-								<li class="benefit-item">
-									<span class="benefit-icon">✓</span>
+								<li class=" font-sans text-[14px] font-normal text-[#5f5f60] md:font-medium xl:font-normal xl:text-[18px]">
 									Instantly rollback when needed
 								</li>
 							</ul>
@@ -48,108 +52,17 @@
 					</div>
 
 					<!-- Dashboard Image -->
-					<div class="dashboard-image-container">
+					<div class="">
 						<img
 							src="/images/what-is-intellitoggle.png"
 							alt="IntelliToggle Dashboard"
-							class="dashboard-image"
+							class="w-full h-auto 2xl:w-[830px] 2xl:h-[618px]"
 							loading="lazy"
 						>
 					</div>
 				</div>
 			</div>
 
-			<!-- Tablet Layout (Centered) -->
-			<div class="hidden md:block lg:hidden">
-				<div class="max-w-4xl mx-auto">
-					<!-- Text Content -->
-					<div class="text-content text-center mb-8">
-						<h2 class="main-title mb-6">
-							Your AI Dart App's Control Panel For Feature Releases
-						</h2>
-						<p class="description mb-8">
-							IntelliToggle is a 'Dart-Powered' feature flag that lets you turn features on/off instantly in your application without redeploying code. It allows you control roll-outs, run experiments, and fix bugs faster.
-						</p>
-
-						<!-- Benefits Section -->
-						<div class="benefits-section">
-							<h3 class="benefits-title mb-4">
-								Benefits
-							</h3>
-							<ul class="benefits-list">
-								<li class="benefit-item">
-									<span class="benefit-icon">✓</span>
-									Toggle new features without app updates
-								</li>
-								<li class="benefit-item">
-									<span class="benefit-icon">✓</span>
-									Roll out to specific users or regions
-								</li>
-								<li class="benefit-item">
-									<span class="benefit-icon">✓</span>
-									Instantly rollback when needed
-								</li>
-							</ul>
-						</div>
-					</div>
-
-					<!-- Dashboard Image -->
-					<div class="dashboard-image-container">
-						<img
-							src="/images/what-is-intellitoggle.png"
-							alt="IntelliToggle Dashboard"
-							class="dashboard-image"
-							loading="lazy"
-						>
-					</div>
-				</div>
-			</div>
-
-			<!-- Mobile Layout (Stacked) -->
-			<div class="md:hidden">
-				<div class="mobile-layout">
-					<!-- Text Content -->
-					<div class="text-content mb-8">
-						<h2 class="mobile-main-title mb-4">
-							Your AI Dart App's Control Panel For Feature Releases
-						</h2>
-						<p class="mobile-description mb-6">
-							IntelliToggle is a 'Dart-Powered' feature flag that lets you turn features on/off instantly in your application without redeploying code. It allows you control roll-outs, run experiments, and fix bugs faster.
-						</p>
-
-						<!-- Benefits Section -->
-						<div class="benefits-section">
-							<h3 class="mobile-benefits-title mb-3">
-								Benefits
-							</h3>
-							<ul class="mobile-benefits-list">
-								<li class="benefit-item">
-									<span class="benefit-icon">✓</span>
-									Toggle new features without app updates
-								</li>
-								<li class="benefit-item">
-									<span class="benefit-icon">✓</span>
-									Roll out to specific users or regions
-								</li>
-								<li class="benefit-item">
-									<span class="benefit-icon">✓</span>
-									Instantly rollback when needed
-								</li>
-							</ul>
-						</div>
-					</div>
-
-					<!-- Dashboard Image -->
-					<div class="dashboard-image-container">
-						<img
-							src="/images/what-is-intellitoggle.png"
-							alt="IntelliToggle Dashboard"
-							class="dashboard-image"
-							loading="lazy"
-						>
-					</div>
-				</div>
-			</div>
 		</div>
 	</section>
 </template>

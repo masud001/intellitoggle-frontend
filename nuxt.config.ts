@@ -10,7 +10,6 @@ export default defineNuxtConfig({
 		"@nuxt/ui",
 		"@nuxt/content",
 		"@nuxt/fonts",
-		"@nuxtjs/google-fonts",
 	],
 	ssr: true,
 	components: [
@@ -52,18 +51,9 @@ export default defineNuxtConfig({
 			{ name: "Inter", provider: "google" },
 			{ name: "DM Sans", provider: "google" },
 			{ name: "Merriweather Sans", provider: "google" },
+			{ name: "Roboto", provider: "google" },
+			{ name: "Plus Jakarta Sans", provider: "google" },
 		],
-	},
-	googleFonts: {
-		families: {
-			"Inter": [300, 400, 500, 600, 700],
-			"DM Sans": [300, 400, 500, 600, 700],
-			"Merriweather Sans": [300, 400, 500, 600, 700, 800],
-		},
-		display: "swap",
-		preload: true,
-		download: true,
-		inject: true,
 	},
 	image: {
 		// Configure fallback behavior for missing images
@@ -75,14 +65,5 @@ export default defineNuxtConfig({
 				},
 			},
 		},
-	},
-	layoutTransition: {
-		name: "layout",
-		mode: "out-in",
-	},
-	// Page transition configuration
-	pageTransition: {
-		name: "page",
-		mode: "out-in",
 	},
 });
