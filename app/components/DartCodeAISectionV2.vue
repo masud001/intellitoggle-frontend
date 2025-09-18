@@ -34,35 +34,15 @@
 				<!-- Feature Cards Grid -->
 				<div class="grid grid-cols-1 md:grid-cols-2 gap-y-[64px] gap-x-[120px] mb-[80px]">
 					<!-- AutoFlag AI Card -->
-					<div class="glass-card rounded-[16px] p-[32px] text-center shadow-[0_4px_30px_rgba(0,0,0,0.1)] border border-white border-opacity-20">
-						<div class="w-[48px] h-[48px] bg-white rounded-[12px] flex items-center justify-center mx-auto mb-[24px] shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
-							<svg
-								class="w-[24px] h-[24px] text-black"
-								viewBox="0 0 24 24"
-								fill="none"
-							>
-								<path
-									d="M12 2L2 7L12 12L22 7L12 2Z"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-								<path
-									d="M2 17L12 22L22 17"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-								<path
-									d="M2 12L12 17L22 12"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-							</svg>
+					<div class="glass-card backdrop-blur-[6px] rounded-[12px] p-[32px] text-center shadow-[0_4px_30px_rgba(0,0,0,0.1)] border border-white border-opacity-20">
+						<div class="w-[48px] h-[48px] bg-white rounded-[8px] flex items-center justify-center mx-auto mb-[24px] shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
+							<nuxt-img
+								src="/icons/auto-flag-icon.svg"
+								alt="AutoFlag AI"
+								class="w-[24px] h-[24px]"
+								width="24"
+								height="24"
+							/>
 						</div>
 						<h3 class="font-sans text-[18px] font-bold text-white mb-[16px] leading-[1.4]">
 							AutoFlag AI (LLM-Assisted Flag Creation)
@@ -73,21 +53,15 @@
 					</div>
 
 					<!-- SmartRamp AI Card -->
-					<div class="glass-card rounded-[16px] p-[32px] text-center shadow-[0_4px_30px_rgba(0,0,0,0.1)] border border-white border-opacity-20">
+					<div class="glass-card backdrop-blur-[6px] rounded-[12px] p-[32px] text-center shadow-[0_4px_30px_rgba(0,0,0,0.1)] border border-white border-opacity-20">
 						<div class="w-[48px] h-[48px] bg-white rounded-[12px] flex items-center justify-center mx-auto mb-[24px] shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
-							<svg
-								class="w-[24px] h-[24px] text-black"
-								viewBox="0 0 24 24"
-								fill="none"
-							>
-								<path
-									d="M7 17L17 7M17 7H7M17 7V17"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-							</svg>
+							<nuxt-img
+								src="/icons/smart-ram-flag-icon.svg"
+								alt="SmartRamp AI"
+								class="w-[24px] h-[24px]"
+								width="24"
+								height="24"
+							/>
 						</div>
 						<h3 class="font-sans text-[18px] font-bold text-white mb-[16px] leading-[1.4]">
 							SmartRamp AI (AI-Driven Rollout Optimization)
@@ -98,35 +72,15 @@
 					</div>
 
 					<!-- ExplainFlags AI Card -->
-					<div class="glass-card rounded-[16px] p-[32px] text-center shadow-[0_4px_30px_rgba(0,0,0,0.1)] border border-white border-opacity-20">
+					<div class="glass-card backdrop-blur-[6px] rounded-[12px] p-[32px] text-center shadow-[0_4px_30px_rgba(0,0,0,0.1)] border border-white border-opacity-20">
 						<div class="w-[48px] h-[48px] bg-white rounded-[12px] flex items-center justify-center mx-auto mb-[24px] shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
-							<svg
-								class="w-[24px] h-[24px] text-black"
-								viewBox="0 0 24 24"
-								fill="none"
-							>
-								<circle
-									cx="11"
-									cy="11"
-									r="8"
-									stroke="currentColor"
-									stroke-width="2"
-								/>
-								<path
-									d="M21 21L16.65 16.65"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-								<path
-									d="M11 8V14M8 11H14"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-							</svg>
+							<nuxt-img
+								src="/icons/explain-flag-icon.svg"
+								alt="ExplainFlags AI"
+								class="w-[24px] h-[24px]"
+								width="24"
+								height="24"
+							/>
 						</div>
 						<h3 class="font-sans text-[18px] font-bold text-white mb-[16px] leading-[1.4]">
 							ExplainFlags AI (LLM Root-Cause + Insights)
@@ -137,35 +91,15 @@
 					</div>
 
 					<!-- AutoSegment AI Card -->
-					<div class="glass-card rounded-[16px] p-[32px] text-center shadow-[0_4px_30px_rgba(0,0,0,0.1)] border border-white border-opacity-20">
+					<div class="glass-card backdrop-blur-[6px] rounded-[12px] p-[32px] text-center shadow-[0_4px_30px_rgba(0,0,0,0.1)] border border-white border-opacity-20">
 						<div class="w-[48px] h-[48px] bg-white rounded-[12px] flex items-center justify-center mx-auto mb-[24px] shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
-							<svg
-								class="w-[24px] h-[24px] text-black"
-								viewBox="0 0 24 24"
-								fill="none"
-							>
-								<path
-									d="M3 3V21H21V3H3Z"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-								<path
-									d="M9 9H15V15H9V9Z"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-								<path
-									d="M3 9H21M3 15H21"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-							</svg>
+							<nuxt-img
+								src="/icons/auto-segment-flag.svg"
+								alt="AutoSegment AI"
+								class="w-[24px] h-[24px]"
+								width="24"
+								height="24"
+							/>
 						</div>
 						<h3 class="font-sans text-[18px] font-bold text-white mb-[16px] leading-[1.4]">
 							AutoSegment AI (Behavioral Segmentation)
@@ -253,18 +187,30 @@ const handleEmailSubmit = () => {
 	position: relative;
 	overflow: hidden;
 	border-radius: 1rem;
-	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-style: solid solid inset inset;
+	border-top-width: 1px;
+	border-right-width: 0.5px;
+	border-bottom-width: 1px;
+	border-left-width: 0.5px;
+	border-top-color: rgba(255, 255, 255, 1);
+	border-right-color: rgba(255, 255, 255, .8);
+	border-bottom-color: rgba(255, 255, 255, 1);
+	border-left-color: rgba(255, 255, 255, .9);
 }
 
 /* The magnified background layer */
 .glass-card::before {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	content: "";
 	position: absolute;
 	inset: 0;
 	background: inherit; /* pulls the same background as section */
 	background-attachment: fixed; /* important for effect */
-	transform: scale(1.2); /* magnify */
-	filter: blur(6px); /* optional: blur for glass effect */
+	transform: scale(3); /* magnify */
+	filter: blur(15px); /* optional: blur for glass effect */
 	z-index: 0;
 }
 
@@ -273,7 +219,6 @@ const handleEmailSubmit = () => {
 	content: "";
 	position: absolute;
 	inset: 0;
-	background: rgba(255, 255, 255, 0.1);
 	z-index: 1;
 }
 
