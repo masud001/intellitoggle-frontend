@@ -46,15 +46,16 @@ export default defineNuxtConfig({
 			},
 		},
 	},
-	fonts: {
-		families: [
-			{ name: "Inter", provider: "google" },
-			{ name: "DM Sans", provider: "google" },
-			{ name: "Merriweather Sans", provider: "google" },
-			{ name: "Roboto", provider: "google" },
-			{ name: "Plus Jakarta Sans", provider: "google" },
-		],
-	},
+	// Google Fonts removed - using local fonts instead
+	// fonts: {
+	// 	families: [
+	// 		{ name: "Inter", provider: "google" },
+	// 		{ name: "DM Sans", provider: "google" },
+	// 		{ name: "Merriweather Sans", provider: "google" },
+	// 		{ name: "Roboto", provider: "google" },
+	// 		{ name: "Plus Jakarta Sans", provider: "google" },
+	// 	],
+	// },
 	image: {
 		// Configure fallback behavior for missing images
 		presets: {

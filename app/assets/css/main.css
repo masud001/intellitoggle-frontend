@@ -53,6 +53,91 @@
   font-display: swap;
 }
 
+/* Inter Font Face Declarations */
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* DM Sans Font Face Declarations */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DM_Sans/DMSans-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Merriweather Sans Font Face Declarations */
+@font-face {
+  font-family: 'Merriweather Sans';
+  src: url('/fonts/Merriweather_Sans/MerriweatherSans-VariableFont_wght.ttf') format('truetype');
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Merriweather Sans';
+  src: url('/fonts/Merriweather_Sans/MerriweatherSans-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 300 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Roboto Font Face Declarations */
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto/Roboto-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Plus Jakarta Sans Font Face Declarations */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 200 800;
+  font-style: italic;
+  font-display: swap;
+}
+
 @theme {
   /* Custom Breakpoints */
   --breakpoint-xs: 320px;
@@ -71,27 +156,27 @@
   --font-satoshi: "Satoshi", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-dm-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-merriweather-sans: "Merriweather Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-		--font-roboto: "Roboto", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-		--font-plus-jakarta-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-		--font-segoe-ui-this: "Segoe UI This", "Segoe UI", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--font-roboto: "Roboto", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--font-plus-jakarta-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--font-segoe-ui-this: "Segoe UI This", "Segoe UI", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   
   /* Font Feature Settings */
   --font-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   --font-satoshi--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   --font-dm-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   --font-merriweather-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-		--font-roboto--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-		--font-plus-jakarta-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-		--font-segoe-ui-this--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+	--font-roboto--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+	--font-plus-jakarta-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+	--font-segoe-ui-this--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   
   /* Font Variation Settings */
   --font-sans--font-variation-settings: "opsz" 32;
   --font-satoshi--font-variation-settings: "opsz" 32;
   --font-dm-sans--font-variation-settings: "opsz" 32;
   --font-merriweather-sans--font-variation-settings: "opsz" 32;
-		--font-roboto--font-variation-settings: "opsz" 32;
-		--font-plus-jakarta-sans--font-variation-settings: "opsz" 32;
-		--font-segoe-ui-this--font-variation-settings: "opsz" 32;
+	--font-roboto--font-variation-settings: "opsz" 32;
+	--font-plus-jakarta-sans--font-variation-settings: "opsz" 32;
+	--font-segoe-ui-this--font-variation-settings: "opsz" 32;
 }
 
 /* Custom Font Utilities */

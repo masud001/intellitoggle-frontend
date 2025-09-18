@@ -26,6 +26,7 @@ export default {
 				"sans": ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
 				"satoshi": ["Satoshi", "ui-sans-serif", "system-ui", "sans-serif"],
 				"dm-sans": ["DM Sans", "ui-sans-serif", "system-ui", "sans-serif"],
+				"merriweather-sans": ["Merriweather Sans", "ui-sans-serif", "system-ui", "sans-serif"],
 				"roboto": ["Roboto", "ui-sans-serif", "system-ui", "sans-serif"],
 				"plus-jakarta-sans": ["Plus Jakarta Sans", "ui-sans-serif", "system-ui", "sans-serif"],
 			},
