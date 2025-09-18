@@ -857,6 +857,263 @@ function calculateTotal(price, tax) {
 					</div>
 				</div>
 			</section>
+
+			<!-- Gradient Border Utilities -->
+			<section class="mb-12 p-6 bg-white rounded-lg shadow-sm">
+				<h2 class="text-2xl font-semibold mb-6 text-gray-800 font-satoshi">
+					Gradient Border Utilities
+				</h2>
+
+				<div class="space-y-8">
+					<!-- Basic Gradient Border -->
+					<div class="space-y-4">
+						<h3 class="text-lg font-medium text-gray-700 font-dm-sans">
+							Basic Gradient Border
+						</h3>
+						<div class="gradient-border p-6 rounded-lg">
+							<h4 class="text-xl font-bold text-gray-800 mb-2 font-satoshi">
+								Card with Gradient Border
+							</h4>
+							<p class="text-gray-600 font-sans">
+								This card uses the basic gradient border class with purple to dark gradient.
+							</p>
+							<code class="text-sm bg-gray-100 px-2 py-1 rounded font-mono mt-2 inline-block">
+								class="gradient-border"
+							</code>
+						</div>
+					</div>
+
+					<!-- Alternative Gradient Border -->
+					<div class="space-y-4">
+						<h3 class="text-lg font-medium text-gray-700 font-dm-sans">
+							Alternative Gradient Border
+						</h3>
+						<div class="gradient-border-alt p-6 rounded-lg">
+							<h4 class="text-xl font-bold text-gray-800 mb-2 font-satoshi">
+								Multi-Color Gradient Border
+							</h4>
+							<p class="text-gray-600 font-sans">
+								This card uses the alternative gradient border with multiple colors.
+							</p>
+							<code class="text-sm bg-gray-100 px-2 py-1 rounded font-mono mt-2 inline-block">
+								class="gradient-border-alt"
+							</code>
+						</div>
+					</div>
+
+					<!-- Custom Gradient Border -->
+					<div class="space-y-4">
+						<h3 class="text-lg font-medium text-gray-700 font-dm-sans">
+							Custom Gradient Border
+						</h3>
+						<div
+							class="gradient-border-custom p-6 rounded-lg"
+							style="
+								--bg-color: #f8f9ff;
+								--border-radius: 16px;
+								--border-width: 2px;
+								--gradient: linear-gradient(45deg, #42389e, #f9a71e, #0f1026);
+							"
+						>
+							<h4 class="text-xl font-bold text-gray-800 mb-2 font-satoshi">
+								Custom Styled Border
+							</h4>
+							<p class="text-gray-600 font-sans">
+								This card uses custom CSS variables for personalized styling.
+							</p>
+							<code class="text-sm bg-gray-100 px-2 py-1 rounded font-mono mt-2 inline-block">
+								class="gradient-border-custom" with CSS variables
+							</code>
+						</div>
+					</div>
+
+					<!-- Usage Examples -->
+					<div class="space-y-4">
+						<h3 class="text-lg font-medium text-gray-700 font-dm-sans">
+							Usage Examples
+						</h3>
+						<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+							<!-- Button Example -->
+							<div class="space-y-2">
+								<h4 class="font-semibold text-gray-700">
+									Button with Gradient Border
+								</h4>
+								<button class="gradient-border px-6 py-3 text-white font-semibold rounded-lg bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 transition-all duration-300">
+									Click Me
+								</button>
+								<code class="text-xs bg-gray-100 px-2 py-1 rounded font-mono block">
+									&lt;button class="gradient-border"&gt;
+								</code>
+							</div>
+
+							<!-- Card Example -->
+							<div class="space-y-2">
+								<h4 class="font-semibold text-gray-700">
+									Card with Multi-Color Border
+								</h4>
+								<div class="gradient-border-alt p-4 rounded-lg">
+									<div class="w-8 h-8 bg-orange-500 rounded-full mb-2" />
+									<h5 class="font-bold text-gray-800">
+										Feature Card
+									</h5>
+									<p class="text-sm text-gray-600">
+										Description text here
+									</p>
+								</div>
+								<code class="text-xs bg-gray-100 px-2 py-1 rounded font-mono block">
+									&lt;div class="gradient-border-alt"&gt;
+								</code>
+							</div>
+
+							<!-- Orange Border Example -->
+							<div class="space-y-2">
+								<h4 class="font-semibold text-gray-700">
+									Orange Gradient Border
+								</h4>
+								<div class="gradient-border-orange p-4 rounded-lg">
+									<div class="w-8 h-8 bg-orange-500 rounded-full mb-2" />
+									<h5 class="font-bold text-gray-800">
+										Orange Card
+									</h5>
+									<p class="text-sm text-gray-600">
+										Orange themed card
+									</p>
+								</div>
+								<code class="text-xs bg-gray-100 px-2 py-1 rounded font-mono block">
+									&lt;div class="gradient-border-orange"&gt;
+								</code>
+							</div>
+
+							<!-- Blue Border Example -->
+							<div class="space-y-2">
+								<h4 class="font-semibold text-gray-700">
+									Blue Gradient Border
+								</h4>
+								<div class="gradient-border-blue p-4 rounded-lg">
+									<div class="w-8 h-8 bg-blue-500 rounded-full mb-2" />
+									<h5 class="font-bold text-gray-800">
+										Blue Card
+									</h5>
+									<p class="text-sm text-gray-600">
+										Blue themed card
+									</p>
+								</div>
+								<code class="text-xs bg-gray-100 px-2 py-1 rounded font-mono block">
+									&lt;div class="gradient-border-blue"&gt;
+								</code>
+							</div>
+
+							<!-- Green Border Example -->
+							<div class="space-y-2">
+								<h4 class="font-semibold text-gray-700">
+									Green Gradient Border
+								</h4>
+								<div class="gradient-border-green p-4 rounded-lg">
+									<div class="w-8 h-8 bg-green-500 rounded-full mb-2" />
+									<h5 class="font-bold text-gray-800">
+										Green Card
+									</h5>
+									<p class="text-sm text-gray-600">
+										Green themed card
+									</p>
+								</div>
+								<code class="text-xs bg-gray-100 px-2 py-1 rounded font-mono block">
+									&lt;div class="gradient-border-green"&gt;
+								</code>
+							</div>
+
+							<!-- Custom Border Example -->
+							<div class="space-y-2">
+								<h4 class="font-semibold text-gray-700">
+									Custom Gradient Border
+								</h4>
+								<div
+									class="gradient-border-custom p-4 rounded-lg"
+									style="
+										--bg-color: #f8f9ff;
+										--border-radius: 16px;
+										--border-width: 2px;
+										--gradient: linear-gradient(45deg, #42389e, #f9a71e, #0f1026);
+									"
+								>
+									<div class="w-8 h-8 bg-purple-500 rounded-full mb-2" />
+									<h5 class="font-bold text-gray-800">
+										Custom Card
+									</h5>
+									<p class="text-sm text-gray-600">
+										Custom styled card
+									</p>
+								</div>
+								<code class="text-xs bg-gray-100 px-2 py-1 rounded font-mono block">
+									&lt;div class="gradient-border-custom"&gt;
+								</code>
+							</div>
+						</div>
+					</div>
+
+					<!-- CSS Classes Reference -->
+					<div class="space-y-4">
+						<h3 class="text-lg font-medium text-gray-700 font-dm-sans">
+							Available CSS Classes
+						</h3>
+						<div class="bg-gray-50 p-4 rounded-lg">
+							<div class="space-y-2">
+								<div class="flex justify-between">
+									<span class="font-mono text-sm">gradient-border</span>
+									<span class="text-sm text-gray-500">Basic purple gradient border</span>
+								</div>
+								<div class="flex justify-between">
+									<span class="font-mono text-sm">gradient-border-alt</span>
+									<span class="text-sm text-gray-500">Multi-color gradient border</span>
+								</div>
+								<div class="flex justify-between">
+									<span class="font-mono text-sm">gradient-border-custom</span>
+									<span class="text-sm text-gray-500">Customizable with CSS variables</span>
+								</div>
+								<div class="flex justify-between">
+									<span class="font-mono text-sm">gradient-border-orange</span>
+									<span class="text-sm text-gray-500">Orange gradient border</span>
+								</div>
+								<div class="flex justify-between">
+									<span class="font-mono text-sm">gradient-border-blue</span>
+									<span class="text-sm text-gray-500">Blue gradient border</span>
+								</div>
+								<div class="flex justify-between">
+									<span class="font-mono text-sm">gradient-border-green</span>
+									<span class="text-sm text-gray-500">Green gradient border</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- CSS Variables Reference -->
+					<div class="space-y-4">
+						<h3 class="text-lg font-medium text-gray-700 font-dm-sans">
+							CSS Variables (for gradient-border-custom)
+						</h3>
+						<div class="bg-gray-50 p-4 rounded-lg">
+							<div class="space-y-2">
+								<div class="flex justify-between">
+									<span class="font-mono text-sm">--bg-color</span>
+									<span class="text-sm text-gray-500">Background color (default: #edecf6)</span>
+								</div>
+								<div class="flex justify-between">
+									<span class="font-mono text-sm">--border-radius</span>
+									<span class="text-sm text-gray-500">Border radius (default: 8px)</span>
+								</div>
+								<div class="flex justify-between">
+									<span class="font-mono text-sm">--border-width</span>
+									<span class="text-sm text-gray-500">Border width (default: 1px)</span>
+								</div>
+								<div class="flex justify-between">
+									<span class="font-mono text-sm">--gradient</span>
+									<span class="text-sm text-gray-500">Gradient definition (default: linear-gradient(to bottom, #42389e, #0f1026))</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 	</div>
 </template>
@@ -866,5 +1123,5 @@ function calculateTotal(price, tax) {
 </script>
 
 <style scoped>
-/* Additional custom styles if needed */
+/* Gradient border utilities are now available globally in main.css */
 </style>

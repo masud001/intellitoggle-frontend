@@ -248,6 +248,140 @@
   -webkit-text-fill-color: transparent;
 }
 
+/* Gradient Border Utilities - Available Project Wide */
+.gradient-border {
+	position: relative;
+	background: #edecf6;
+	border-radius: 8px;
+}
+
+.gradient-border::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 8px;
+	padding: 1px;
+	background: linear-gradient(to bottom, #42389e, #0f1026);
+	mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	mask-composite: exclude;
+	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	-webkit-mask-composite: xor;
+}
+
+.gradient-border-alt {
+	position: relative;
+	background: #f0f2ff;
+	border-radius: 12px;
+}
+
+.gradient-border-alt::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 12px;
+	padding: 2px;
+	background: linear-gradient(135deg, #42389e, #f9a71e, #0f1026);
+	mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	mask-composite: exclude;
+	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	-webkit-mask-composite: xor;
+}
+
+.gradient-border-custom {
+	position: relative;
+	background: var(--bg-color, #edecf6);
+	border-radius: var(--border-radius, 8px);
+}
+
+.gradient-border-custom::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: var(--border-radius, 8px);
+	padding: var(--border-width, 1px);
+	background: var(--gradient, linear-gradient(to bottom, #42389e, #0f1026));
+	mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	mask-composite: exclude;
+	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	-webkit-mask-composite: xor;
+}
+
+/* Additional Gradient Border Variants */
+.gradient-border-orange {
+	position: relative;
+	background: #fff7ed;
+	border-radius: 8px;
+}
+
+.gradient-border-orange::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 8px;
+	padding: 1px;
+	background: linear-gradient(45deg, #f9a71e, #ff6b35, #f9a71e);
+	mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	mask-composite: exclude;
+	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	-webkit-mask-composite: xor;
+}
+
+.gradient-border-blue {
+	position: relative;
+	background: #eff6ff;
+	border-radius: 8px;
+}
+
+.gradient-border-blue::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 8px;
+	padding: 1px;
+	background: linear-gradient(45deg, #3b82f6, #1d4ed8, #3b82f6);
+	mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	mask-composite: exclude;
+	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	-webkit-mask-composite: xor;
+}
+
+.gradient-border-green {
+	position: relative;
+	background: #f0fdf4;
+	border-radius: 8px;
+}
+
+.gradient-border-green::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 8px;
+	padding: 1px;
+	background: linear-gradient(45deg, #10b981, #059669, #10b981);
+	mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	mask-composite: exclude;
+	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	-webkit-mask-composite: xor;
+}
+
 /* Page transition styles */
 .page-enter-active,
 .page-leave-active {

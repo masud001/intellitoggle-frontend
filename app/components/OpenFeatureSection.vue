@@ -34,7 +34,7 @@
 							variant="primary"
 							text-class="font-merriweather-sans text-[20px] font-bold leading-[1.15]"
 							right-icon="🚀"
-							button-class=" capitalize 2xl:py-[12px] 2xl:px-[24px] rounded-[8px] md:py-[24px] md:px-[36px] shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
+							button-class=" capitalize 2xl:py-[12px] 2xl:px-[24px] rounded-[8px] md:py-[24px] md:px-[36px]  shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
 						>
 							learn more
 						</Button>

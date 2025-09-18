@@ -25,17 +25,29 @@
 		<!-- What Is IntelliToggle Section -->
 		<WhatIsIntelliToggleSection />
 
-		<!-- Control & Power Section -->
-		<ControlPowerSection />
-
 		<!-- OpenFeature Section -->
 		<OpenFeatureSection />
+
+		<!-- Control & Power Section -->
+		<ControlPowerSection />
 
 		<!-- Dart Powered Feature Flag Section -->
 		<DartPoweredFeatureFlagSection />
 
+		<!-- Why Teams Use IntelliToggle Section -->
+		<WhyTeamsUseIntelliToggleSection />
+
 		<!-- Pricing Section -->
 		<PricingSection @subscribe="handleSubscribe" />
+
+		<!-- Free Trial CTA Section -->
+		<FreeTrialCTASection />
+
+		<!-- DartCodeAI Section -->
+		<!-- <DartCodeAISection /> -->
+
+		<!-- DartCodeAI Section V2 (Alternative Approach) -->
+		<DartCodeAISectionV2 />
 
 		<!-- Simple Section with Background Pattern -->
 		<SimpleSection
@@ -56,7 +68,11 @@ import ControlPowerSection from "~/components/ControlPowerSection.vue";
 import OpenFeatureSection from "~/components/OpenFeatureSection.vue";
 import WhatIsIntelliToggleSection from "~/components/WhatIsIntelliToggleSection.vue";
 import DartPoweredFeatureFlagSection from "~/components/DartPoweredFeatureFlagSection.vue";
+import WhyTeamsUseIntelliToggleSection from "~/components/WhyTeamsUseIntelliToggleSection.vue";
 import PricingSection from "~/components/PricingSection.vue";
+import FreeTrialCTASection from "~/components/FreeTrialCTASection.vue";
+import DartCodeAISection from "~/components/DartCodeAISection.vue";
+import DartCodeAISectionV2 from "~/components/DartCodeAISectionV2.vue";
 
 // Button click handlers
 const handleGetStarted = () => {
