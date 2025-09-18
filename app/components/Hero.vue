@@ -21,7 +21,7 @@
 					Starting at just $1/month
 				</p>
 
-				<div class=" mt-[37px] lg:mt-[24px] xl:mt-[32px] w-full lg:w-[561px] mx-auto">
+				<div class=" mt-[37px] lg:mt-[24px] xl:mt-[32px] w-full lg:w-[552px] mx-auto">
 					<!-- Call-to-Action Buttons -->
 					<div class="flex flex-col lg:flex-row gap-2 lg:gap-[24px] xl:gap-[32px] justify-center lg:items-end">
 						<div class="flex-1 md:min-w-[243px] lg:min-w-[260px]">
