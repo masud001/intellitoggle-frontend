@@ -15,8 +15,8 @@
 							:src="isSticky ? '/images/logo-white.svg' : '/images/logo-white.svg'"
 							alt="IntelliToggle"
 							class="w-[80px] h-[23px] md:w-[212px] lg:h-[60px]"
-							width="205.5"
-							height="50.8"
+							width="212"
+							height="60"
 							loading="eager"
 							preload
 						/>
