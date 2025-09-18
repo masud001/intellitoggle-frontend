@@ -45,13 +45,13 @@
 					>
 						Pricing
 					</NavLink>
-					<NavLink
+					<!-- <NavLink
 						to="/components"
 						:active="currentPath === '/components'"
 						:class="isSticky ? 'nav-link' : 'nav-link'"
 					>
 						Components
-					</NavLink>
+					</NavLink> -->
 				</nav>
 
 				<!-- Get Start Sandbox - Right most (1024px+) -->
@@ -159,14 +159,14 @@
 									>
 										Pricing
 									</NavLink>
-									<NavLink
+									<!-- <NavLink
 										to="/components"
 										:active="currentPath === '/components'"
 										class="nav-link custom-text"
 										@click="mobileMenuOpen = false"
 									>
 										Components
-									</NavLink>
+									</NavLink> -->
 								</div>
 
 								<!-- CTA Button -->
