@@ -29,7 +29,7 @@
 						:active="currentPath === '/'"
 						:class="isSticky ? 'nav-link' : 'nav-link'"
 					>
-						Home
+						Homc
 					</NavLink>
 					<NavLink
 						to="/about"
