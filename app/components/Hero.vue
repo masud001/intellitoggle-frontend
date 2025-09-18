@@ -10,7 +10,7 @@
 					</span> Feature Flag With DartCodeAI
 				</h1>
 
-				<p class="hidden lg:block md:capitalize lg:normal-case font-sans text-[#fefeff] font-semibold text-[14px] lg:text-[22px] xl:text-[32px] leading-[1.25] lg:px-[150px] xl:px-[110px]">
+				<p class="hidden lg:block md:capitalize lg:normal-case font-sans text-[#fefeff] font-semibold text-[14px] lg:text-[22px] xl:text-[32px] leading-[1.25] lg:px-[150px] xl:px-[150px]">
 					Feature flags built for Dart, Ship faster, roll back safely, and scale with AI-powered delivery
 				</p>
 				<p class="lg:hidden font-sans  normal-case text-white text-[14px]">
