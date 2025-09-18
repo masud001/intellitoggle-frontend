@@ -1,5 +1,5 @@
 <template>
-	<section class="simple-section  relative w-full mx-auto px-[25px] lg:py-[64px] xl:mt-[120px] xl:mb-[200px] rounded-[8px] mt-[32px] mb-[54px] overflow-hidden">
+	<section class="simple-section px-[15px] relative w-full mx-auto py-[32px] md:py-[64px] xl:py-[120px]   rounded-[8px] overflow-hidden">
 		<!-- Background Pattern -->
 		<div class="bg-gradient-to-b from-[#42389e] to-[#0f1026] md:bg-[url('/images/background-pattern.svg')] bg-center bg-no-repeat object-fill lg:bg-center xl:bg-[103%] flex items-center justify-center w-full md:w-[90%] lg:w-[892px] 2xl:w-[1384px] min-h-[280px] md:min-h-[300px] lg:min-h-[333px] xl:min-h-[375px] mx-auto rounded-[40px] md:rounded-[8px]">
 			<!-- Content Container -->

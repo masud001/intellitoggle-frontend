@@ -1,5 +1,5 @@
 <template>
-	<section class="open-feature-section py-[120px] bg-[#edecf6]">
+	<section class="open-feature-section py-[32px] md:py-[64px] xl:py-[120px] bg-[#edecf6]">
 		<div class="container-custom ">
 			<div class="feature-section">
 				<div class="grid xl:grid-cols-2 items-center text-center xl:text-left xl:gap-x-[100px] 2xl:gap-x-[150px] 4xl:gap-x-[275px] h-full">

@@ -1,5 +1,5 @@
 <template>
-	<section class="why-teams-section py-[120px] hidden xl:block">
+	<section class="why-teams-section py-[32px] md:py-[64px] xl:py-[120px] hidden xl:block">
 		<div class="container-custom  relative z-10">
 			<div class="w-full max-w-[1384px] mx-auto">
 				<!-- Section Title -->

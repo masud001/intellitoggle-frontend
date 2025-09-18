@@ -1,5 +1,5 @@
 <template>
-	<section class="dart-powered-section py-[40px] md:py-[64px] xl:py-[120px] bg-white">
+	<section class="dart-powered-section py-[32px] md:py-[64px] xl:py-[120px] bg-white">
 		<div class="container-custom">
 			<!-- Section Title -->
 			<div class=" mb-[32px] md:mb-[48px] xl:mb-[64px]">

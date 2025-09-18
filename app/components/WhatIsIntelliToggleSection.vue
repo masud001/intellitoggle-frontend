@@ -1,5 +1,5 @@
 <template>
-	<section class="what-is-intellitoggle-section py-16 lg:py-24 xl:py-32 bg-white">
+	<section class="what-is-intellitoggle-section py-[32px] md:py-[64px] xl:py-[120px] bg-white">
 		<div class="container-custom">
 			<!-- Section Title -->
 			<div class="text-center mb-[16px] md:mb-[48px] hidden md:block">

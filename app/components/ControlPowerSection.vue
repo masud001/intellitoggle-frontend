@@ -1,5 +1,5 @@
 <template>
-	<section class="control-power-section py-[40px] md:py-[64px] xl:py-[120px] bg-white">
+	<section class="control-power-section py-[32px] md:py-[64px] xl:py-[120px] bg-white">
 		<div class="container-custom">
 			<!-- Section Title -->
 			<div class="text-center mb-[15px] md:mb-[57px] xl:mb-[48px]">

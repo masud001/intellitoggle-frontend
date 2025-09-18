@@ -1,36 +1,43 @@
 <template>
-	<section class="free-trial-cta-section py-[80px] md:py-[100px] xl:py-[120px] bg-[#f8f8fa]">
+	<section class="free-trial-cta-section py-[32px] md:py-[64px] xl:py-[120px] bg-[#edecf6]">
 		<div class="container-custom">
 			<div class="w-full max-w-[1384px] mx-auto">
 				<!-- Pricing Section -->
-				<div class="text-center mb-[80px]">
-					<!-- Main Heading -->
-					<h2 class="font-sans text-[28px] md:text-[36px] xl:text-[48px] font-bold text-[#1a1c3d] mb-[48px] leading-[1.2]">
-						Plans Built For Every Stage Of Growth
-					</h2>
-					
+				<div class="text-center">
+					<div class=" mb-[48px] hidden md:block">
+						<SectionTitle
+							variant="gradient"
+							size="3xl"
+							align="center"
+							class="text-[32px] xl:text-[40px] font-bold leading-[1.2] "
+						>
+							Plans Built For Every Stage Of Growth
+						</SectionTitle>
+					</div>
+
 					<!-- Pricing Card -->
-					<div class="inline-block">
-						<div class="bg-gradient-to-br from-[#42389E] to-[#0F1026] rounded-[16px] p-[40px] shadow-[0_8px_32px_rgba(66,56,158,0.3)] mb-[24px]">
+					<div class=" mb-[32px] max-w-[372px] w-full mx-auto hidden md:block">
+						<div class="bg-[linear-gradient(to_bottom,#42389e,#0f1026),linear-gradient(to_bottom,#42389e,#0f1026)] rounded-[12px] p-[24px] shadow-[0_8px_32px_rgba(66,56,158,0.3)] mb-[16px] !w-full xl:!max-w-[372px]  hidden xl:block">
 							<div class="text-center">
-								<p class="text-white text-[16px] font-medium mb-[8px] opacity-90">
+								<h2 class=" font-merriweather-sans text-[#fefeff] text-[20px] font-bold mb-[21px]">
 									Prices starts at
-								</p>
+								</h2>
 								<div class="flex items-baseline justify-center gap-[8px]">
-									<span class="text-white text-[48px] md:text-[64px] xl:text-[72px] font-bold leading-[1]">
+									<span class=" font-merriweather-sans text-[#fefeff] text-[48px] font-bold leading-[1]">
 										$10
 									</span>
-									<span class="text-white text-[18px] md:text-[24px] font-medium opacity-90">
+									<span class=" font-segoe-ui-this text-[#fefeff] text-[24px] font-normal">
 										/month
 									</span>
 								</div>
 							</div>
 						</div>
-						
+
 						<!-- CTA Button -->
+
 						<Button
 							variant="primary"
-							button-class="px-[32px] py-[16px] rounded-[12px] font-semibold text-[18px] shadow-[0_4px_16px_rgba(249,167,30,0.3)] transition-all duration-300 hover:-translate-y-[2px] hover:shadow-[0_6px_24px_rgba(249,167,30,0.4)]"
+							button-class="py-[12px] px-[24px] rounded-[8px] !w-full xl:!max-w-[372px]"
 							text-class="font-sans font-semibold"
 							@click="handleViewDetails"
 						>
@@ -58,7 +65,7 @@
 								variant="primary"
 								text-class="font-merriweather-sans text-[20px] font-bold leading-[1.15]"
 
-								button-class=" capitalize 2xl:py-[12px] 2xl:px-[24px] rounded-[8px] md:py-[24px] md:px-[36px]  shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
+								button-class=" capitalize 2xl:py-[12px] 2xl:px-[24px] rounded-[8px] md:py-[24px] md:px-[36px]  shadow-[0_4px_4px_rgba(0,0,0,0.25)] lg:shadow-none"
 							>
 								Get Started
 							</Button>
@@ -67,7 +74,7 @@
 							<Button
 								variant="outline"
 								size="lg"
-								button-class=" capitalize 2xl:py-[12px] 2xl:px-[24px] rounded-[8px] md:py-[24px] md:px-[36px]  shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
+								button-class=" capitalize 2xl:py-[12px] 2xl:px-[24px] rounded-[8px] md:py-[24px] md:px-[36px]  shadow-[0_4px_4px_rgba(0,0,0,0.25)]  lg:shadow-none"
 								text-class="font-merriweather-sans text-[20px] font-bold leading-[1.15]"
 								@click="handleLearnMore"
 							>

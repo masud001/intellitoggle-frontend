@@ -4,7 +4,7 @@
 		<Hero />
 
 		<!-- video section -->
-		<div class="video-section lg:mb-[64px] relative z-10 shadow-[0 0 10px 10px rgba(0, 0, 0, 0.05)] w-[294px] h-[209px] lg:w-[805px] lg:h-[534px] xl:w-[992px] xl:h-[768px]  2xl:w-[1440px] 2xl:h-[1024px]  mx-auto rounded-[8px] shadow-[0_0_10px_10px_rgba(0,0,0,0.05)] border border-[#99a0ae] bg-white">
+		<div class="video-section relative z-10 shadow-[0 0 10px 10px rgba(0, 0, 0, 0.05)] w-[294px] h-[209px] lg:w-[805px] lg:h-[534px] xl:w-[992px] xl:h-[768px]  2xl:w-[1440px] 2xl:h-[1024px]  mx-auto rounded-[8px] shadow-[0_0_10px_10px_rgba(0,0,0,0.05)] border border-[#99a0ae] bg-white">
 			<div class="video-play-button absolute inset-0 flex items-center justify-center">
 				<nuxt-img
 					src="/icons/video-play-button-icon.svg"
@@ -34,8 +34,8 @@
 		<!-- Dart Powered Feature Flag Section -->
 		<DartPoweredFeatureFlagSection />
 
-		<!-- Why Teams Use IntelliToggle Section -->
-		<WhyTeamsUseIntelliToggleSection />
+		<!-- DartCodeAI Section V2 (Alternative Approach) -->
+		<DartCodeAISectionV2 />
 
 		<!-- Pricing Section -->
 		<PricingSection @subscribe="handleSubscribe" />
@@ -43,11 +43,8 @@
 		<!-- Free Trial CTA Section -->
 		<FreeTrialCTASection />
 
-		<!-- DartCodeAI Section -->
-		<!-- <DartCodeAISection /> -->
-
-		<!-- DartCodeAI Section V2 (Alternative Approach) -->
-		<DartCodeAISectionV2 />
+		<!-- Why Teams Use IntelliToggle Section -->
+		<WhyTeamsUseIntelliToggleSection />
 
 		<!-- Simple Section with Background Pattern -->
 		<SimpleSection
