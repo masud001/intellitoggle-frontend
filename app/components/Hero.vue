@@ -3,7 +3,7 @@
 	<div class="header-section-background absolute top-0 left-0 w-full h-[710px] md:h-[720px] lg:h-[951px] xl:h-[1290px] 2xl:h-[1375px]" />
 	<section class="hero-section">
 		<div class="container-custom mx-auto z-10 flex items-center pt-[14px] pb-[42px] lg:pt-[64px] lg:pb-[69px] xl:pt-[154.2px] xl:pb-[141px]">
-			<div class="hero-content mx-auto w-full mobile:w-[351px] lg:w-[1035px] max-w-[1040px] text-center">
+			<div class="hero-content mx-auto w-full mobile:w-[351px] lg:w-[1035px] xl:w-[1040px] text-center">
 				<h1 class="capitalize font-satoshi text-white font-bold xs:text-[27px] sm:text-[33px] mobile:text-[34px] lg:text-[44px] leading-[1.3] md:leading-[1.6] lg:leading-[1.82] xl:leading-[1.3]   xl:text-[64px]  mb-[17px] lg:mb-[6px] xl:mb-[18px]">
 					The First <span class="bg-[#f9a71e] px-[10px] rounded-[8px]">
 						<span class="dart-native-text ">Dart-Native</span>
