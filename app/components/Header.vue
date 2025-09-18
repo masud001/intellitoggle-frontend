@@ -313,7 +313,6 @@ onUnmounted(() => {
   width: 100%;
   height: 100%;
   position: relative;
-  left: -18px;
 }
 
 /* Navigation links styling - custom-text will override when sticky */
