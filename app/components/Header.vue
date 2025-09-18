@@ -3,8 +3,8 @@
 		class="sticky top-0 z-50 transition-all duration-300"
 		:class="isSticky ? 'sticky-header backdrop-sepia-50 backdrop-blur-sm' : 'normal-header'"
 	>
-		<div class="container-custom py-[29px] lg:py-[32px] xl:py-[40px]">
-			<div class="flex items-center">
+		<div class="container-custom xl:!px-0 py-[29px] lg:py-[32px] xl:py-[40px]">
+			<div class="flex items-center justify-between">
 				<!-- Logo - Left most -->
 				<div class="flex items-center w-[80px] h-[23px] md:w-[212px] md:h-[60px] justify-start flex-shrink-0 logo-container">
 					<NuxtLink
@@ -14,7 +14,7 @@
 						<nuxt-img
 							:src="isSticky ? '/images/logo-white.svg' : '/images/logo-white.svg'"
 							alt="IntelliToggle"
-							class="w-full h-full md:scale-x-110 md:scale-y-110"
+							class="w-full h-full md:scale-x-120 md:scale-y-110"
 							width="212"
 							height="60"
 							loading="eager"
@@ -321,7 +321,6 @@ onUnmounted(() => {
   width: 100%;
   height: 100%;
   position: relative;
-  left: -20px;
 }
 
 /* Navigation links styling - custom-text will override when sticky */
