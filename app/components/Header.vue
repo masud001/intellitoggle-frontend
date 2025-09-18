@@ -14,7 +14,7 @@
 						<nuxt-img
 							:src="isSticky ? '/images/logo-white.svg' : '/images/logo-white.svg'"
 							alt="IntelliToggle"
-							class="w-[80px] h-[32px] lg:w-[212px] lg:h-[60px]"
+							class="w-[80px] h-[23px] md:w-[212px] lg:h-[60px]"
 							width="205.5"
 							height="50.8"
 							loading="eager"
