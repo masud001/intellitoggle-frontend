@@ -6,7 +6,7 @@
 		<div class="container-custom py-[29px] lg:py-[32px] xl:py-[40px]">
 			<div class="flex items-center">
 				<!-- Logo - Left most -->
-				<div class="flex items-center justify-start flex-shrink-0 logo-container">
+				<div class="flex items-center w-[80px] h-[23px] md:w-[212px] lg:h-[60px] justify-start flex-shrink-0 logo-container">
 					<NuxtLink
 						to="/"
 						class="w-full h-full"
@@ -14,7 +14,7 @@
 						<nuxt-img
 							:src="isSticky ? '/images/logo-white.svg' : '/images/logo-white.svg'"
 							alt="IntelliToggle"
-							class="w-[80px] h-[23px] md:w-[212px] lg:h-[60px]"
+							class="w-full h-full object-contain"
 							width="212"
 							height="60"
 							loading="eager"
@@ -235,6 +235,14 @@ import NavLink from "~/components/ui/NavLink.vue";
 const mobileMenuOpen = ref(false);
 const isSticky = ref(false);
 const route = useRoute();
+
+const logo = ref(null);
+
+onMounted(() => {
+	if (logo.value) {
+		console.log("Image size:", logo.value.offsetWidth, logo.value.offsetHeight);
+	}
+});
 
 // Computed property for current path to avoid hydration issues
 const currentPath = computed(() => {
