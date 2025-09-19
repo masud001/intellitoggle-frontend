@@ -1,6 +1,6 @@
 <template>
 	<section class="dart-powered-section py-[32px] md:py-[64px] lg:pb-[105px] xl:py-[120px] bg-white">
-		<div class="container-custom xl:!px-0">
+		<div class="container-custom">
 			<!-- Section Title -->
 			<div class=" mb-[32px] md:mb-[48px] xl:mb-[28px]">
 				<SectionTitle

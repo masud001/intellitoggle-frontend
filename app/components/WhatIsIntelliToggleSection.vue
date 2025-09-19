@@ -1,6 +1,6 @@
 <template>
 	<section class="what-is-intellitoggle-section py-[32px] md:py-[64px] xl:py-[120px] bg-white">
-		<div class="container-custom xl:!px-0">
+		<div class="container-custom">
 			<!-- Section Title -->
 			<div class="text-center mb-[16px] md:mb-[48px] hidden md:block">
 				<SectionTitle
@@ -52,11 +52,11 @@
 					</div>
 
 					<!-- Dashboard Image -->
-					<div class=" shrink-0 lg:w-[383px] lg:h-[262px] 2xl:w-[830px] 2xl:h-[618px] shadow-[0_0_10px_10px_rgba(0,0,0,0.05)] bg-linear-to-t from-[#0F1026] to-[#42389E] rounded-[12px] py-[46px] px-[51px]">
+					<div class=" lg:w-[383px] lg:h-[262px] 2xl:w-[830px] 2xl:h-[618px] shadow-[0_0_10px_10px_rgba(0,0,0,0.05)] bg-linear-to-t from-[#0F1026] to-[#42389E] rounded-[12px] py-[46px] px-[51px]">
 						<img
 							src="/images/what-is-intellitoggle.png"
 							alt="IntelliToggle Dashboard"
-							class="w-full h-fulś "
+							class="w-full h-full "
 							loading="lazy"
 						>
 					</div>

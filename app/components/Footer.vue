@@ -1,6 +1,6 @@
 <template>
 	<footer class="bg-[#e1e2f0] py-[64px] lg:pt-[100px] xl:py-[100px]">
-		<div class="container-custom xl:!px-0">
+		<div class="container-custom ">
 			<div class="lg:flex lg:gap-x-[73px] xl:gap-x-[80px] 2xl:gap-x-[265px]">
 				<!-- Company Info & Social -->
 				<div class=" w-full max-w-[340px] flex flex-col gap-[5px]">
@@ -32,8 +32,8 @@
 					</a>
 				</div>
 
-				<div class="py-[33px] gap-x-[57px] flex md:flex-wrap md:gap-y-[24px] mobile:gap-x-[57px] lg:gap-x-[130px] xl:gap-x-[150px] 2xl:gap-x-[113px] xl:py-0 w-full xl:w-full">
-					<div class="order-2 lg:order-2 xl:order-1">
+				<div class="py-[33px] gap-x-[57px] flex md:flex-wrap md:gap-y-[24px] mobile:gap-x-[57px] lg:gap-x-[80px] xl:gap-x-[100px] 2xl:gap-x-[80px] xl:py-0 w-full xl:w-full">
+					<div class="lg:order-2 xl:order-1">
 						<!-- Resources Links -->
 						<FooterSection
 							title="Resources"

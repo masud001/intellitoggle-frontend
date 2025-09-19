@@ -1,6 +1,6 @@
 <template>
 	<section class="open-feature-section py-[32px] md:py-[64px] lg:pt-[230px] xl:py-[120px] bg-[#edecf6]">
-		<div class="container-custom xl:!px-0">
+		<div class="container-custom">
 			<div class="w-full">
 				<div class="flex flex-col xl:flex-row gap-[42px] items-center justify-between">
 					<!-- Image Content (Left Side) -->
