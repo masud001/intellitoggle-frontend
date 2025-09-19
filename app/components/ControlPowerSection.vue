@@ -2,12 +2,12 @@
 	<section class="control-power-section py-[32px] md:py-[64px] xl:py-[120px] bg-white">
 		<div class="container-custom xl:!px-0">
 			<!-- Section Title -->
-			<div class="text-center mb-[15px] md:mb-[57px] xl:mb-[45px]">
+			<div class="text-center mb-[15px] md:mb-[57px] lg:mb-[75px] xl:mb-[45px]">
 				<SectionTitle
 					variant="gradient"
 					size="3xl"
 					align="center"
-					class="font-bold font-satoshi text-[26px] lg:font-bold lg:font-dm-sans lg:text-[32px] xl:font-bold xl:font-satoshi xl:text-[41px] tracking-[1%] !leading-[1.65]"
+					class="font-bold font-satoshi text-[26px] lg:font-bold lg:font-dm-sans lg:text-[34px] xl:font-bold xl:font-satoshi xl:text-[41px] tracking-[1%] !leading-[1.65]"
 				>
 					Control & Power-focused
 				</SectionTitle>
@@ -73,24 +73,24 @@
 							<div
 								v-for="item in controlItems"
 								:key="item.id"
-								class="flex-shrink-0 w-[300px]"
+								class="flex-shrink-0 w-[350px] "
 							>
 								<!-- Mockup Image -->
-								<div class="mockup-container mb-[25px]">
+								<div class="mockup-container w-[350px] h-[256px]  mb-[25px]">
 									<img
 										:src="item.mockupImage"
 										:alt="item.title"
-										class="w-full h-auto rounded-lg shadow-lg"
+										class="w-full h-[100%] rounded-lg shadow-lg"
 										loading="lazy"
 									>
 								</div>
 
 								<!-- Content -->
 								<div class="text-left">
-									<h3 class="font-sans text-[24px] font-semibold text-[#1a1c3d] mb-[8px] capitalize">
-										{{ item.title }}
+									<h3 class="font-sans text-[24px] font-semibold text-[#1a1c3d] mb-[8px] lg:mb-[10px] xl:mb-[8px] capitalize">
+										{{ item.title }} 1
 									</h3>
-									<p class="font-sans text-[18px] font-normal text-[#5f5f60] mb-[25px]">
+									<p class="font-sans text-[18px] lg:text-[20px] xl:text-[18px] lg:leading-[1.1] xl:leading-normal font-normal text-[#5f5f60] mb-[25px]">
 										{{ item.description }}
 									</p>
 									<Button

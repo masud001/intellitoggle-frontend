@@ -1,8 +1,8 @@
 <template>
-	<section class="trusted-partners-section py-[64px] xl:py-[120px]  bg-white">
+	<section class="trusted-partners-section py-[64px] xl:py-[120px]  bg-green">
 		<div class="container-custom">
 			<!-- Section Title -->
-			<div class="text-center mb-[16px] lg:mb-[40px]">
+			<div class="text-center mb-[16px] lg:mb-[46px] xl:mb-[40px]">
 				<SectionTitle
 					variant="gradient"
 					title-class="text-red-500 tracking-wide"
@@ -15,13 +15,13 @@
 			<!-- Desktop & Tablet Layout -->
 			<div class="hidden md:block">
 				<div
-					class="flex flex-nowrap justify-center items-center"
+					class="flex flex-nowrap justify-center items-center mx-auto lg:w-[847px] xl:w-full"
 					:style="{ gap: logoStyles.spacing }"
 				>
 					<div
 						v-for="partner in displayPartners"
 						:key="partner.id"
-						class="partner-logo-container"
+						class="partner-logo-container shrink-0"
 						:class="logoClasses"
 					>
 						<img
@@ -235,7 +235,7 @@ const logoStyles = computed(() => {
 	// Default to desktop values for SSR
 	const currentWidth = typeof window !== "undefined" ? windowWidth.value : 1024;
 	const isMobile = currentWidth < 768;
-	const isTablet = currentWidth >= 768 && currentWidth < 1024;
+	const isTablet = currentWidth >= 768 && currentWidth <= 1024;
 
 	let height, maxWidth, spacing;
 

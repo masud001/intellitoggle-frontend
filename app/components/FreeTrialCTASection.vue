@@ -1,5 +1,5 @@
 <template>
-	<section class="free-trial-cta-section py-[32px] md:py-[64px] xl:py-[120px] bg-[#edecf6]">
+	<section class="free-trial-cta-section py-[32px] md:py-[64px] lg:pt-[35px] xl:py-[120px] bg-[#edecf6]">
 		<div class="container-custom">
 			<div class="w-full max-w-[1384px] mx-auto">
 				<!-- Pricing Section -->
@@ -37,16 +37,16 @@
 
 						<Button
 							variant="primary"
-							button-class="py-[15px] px-[24px] rounded-[8px] !w-full xl:!max-w-[372px]"
+							button-class=" py-[11px] xl:py-[15px] px-[24px] rounded-[8px] !w-full xl:!max-w-[372px]"
 							text-class="font-sans font-semibold tracking-wide leading-[1.6] text-[18px]"
 							@click="handleViewDetails"
 						>
-							View Subscription Details
+							View Subscription Details 1
 						</Button>
 					</div>
 				</div>
 				<!-- CTA Card -->
-				<div class="gradient-border-card bg-white border-[0.5px] border-gray-200 py-[63px] px-[32px] rounded-[12px] shadow-md">
+				<div class="gradient-border-card bg-white border-[0.5px] border-gray-200 lg:py-[32px] xl:py-[63px] px-[32px] rounded-[12px] shadow-md">
 					<div class="flex flex-col md:flex-row items-center justify-between gap-[24px] lg:gap-[40px]">
 						<!-- Text Content -->
 						<div class="text-center md:text-left flex-1">
@@ -59,13 +59,13 @@
 						</div>
 
 						<!-- Action Buttons -->
-						<div class="flex flex-col xl:flex-row mt-[64px] md:mt-0  gap-[16px] lg:gap-[20px] xl:gap-x-[32px]">
+						<div class="flex flex-col xl:flex-row mt-[64px] md:mt-0  gap-[16px] lg:gap-[10px] xl:gap-x-[32px]">
 							<!-- Get Started Button -->
 							<Button
 								variant="primary"
 								text-class="font-merriweather-sans text-[20px] font-bold leading-[1.15]"
 
-								button-class=" relative xl:left-[5px] capitalize 2xl:py-[12px] 2xl:px-[36px] rounded-[8px] md:py-[24px] md:px-[36px]  shadow-[0_4px_4px_rgba(0,0,0,0.25)] lg:shadow-none"
+								button-class=" relative xl:left-[5px] capitalize lg:py-[12px]  xl:py-[12px] 2xl:py-[12px] 2xl:px-[36px] rounded-[8px] md:py-[24px] md:px-[36px]  shadow-[0_4px_4px_rgba(0,0,0,0.25)] lg:shadow-none"
 							>
 								Get Started
 							</Button>
@@ -74,7 +74,7 @@
 							<Button
 								variant="outline"
 								size="lg"
-								button-class=" relative xl:left-[5px] capitalize 2xl:py-[14px] 2xl:px-[36px] rounded-[2px] md:py-[24px] md:px-[36px]  shadow-[0_4px_4px_rgba(0,0,0,0.25)]  lg:shadow-none"
+								button-class=" relative xl:left-[5px] capitalize lg:py-[13px] xl:py-[14px] 2xl:py-[14px] 2xl:px-[36px] rounded-[2px] md:py-[24px] md:px-[36px]  shadow-[0_4px_4px_rgba(0,0,0,0.25)]  lg:shadow-none"
 								text-class="font-merriweather-sans text-[20px] font-bold leading-[1.15]"
 								@click="handleLearnMore"
 							>

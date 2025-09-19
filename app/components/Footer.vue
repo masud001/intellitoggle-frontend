@@ -1,5 +1,5 @@
 <template>
-	<footer class="bg-[#e1e2f0] py-[64px] xl:py-[100px]">
+	<footer class="bg-[#e1e2f0] py-[64px] lg:pt-[100px] xl:py-[100px]">
 		<div class="container-custom xl:!px-0">
 			<div class="lg:flex lg:gap-x-[73px] xl:gap-x-[80px] 2xl:gap-x-[265px]">
 				<!-- Company Info & Social -->
@@ -32,49 +32,53 @@
 					</a>
 				</div>
 
-				<div class="py-[33px] gap-x-[57px] flex md:flex-wrap md:gap-y-[24px] mobile:gap-x-[57px] xl:gap-x-[150px] 2xl:gap-x-[113px] xl:py-0 w-full xl:w-full">
-					<!-- Resources Links -->
-					<FooterSection
-						title="Resources"
-						class="xs:shrink-0  relative"
-					>
-						<FooterLink
-							href="#"
-							text="Why IntelliToggle is different"
-						/>
-						<FooterLink
-							href="#"
-							text="Customer Support"
-						/>
-						<FooterLink
-							href="#"
-							text="Terms & conditions"
-						/>
-						<FooterLink
-							href="#"
-							text="Privacy Policy"
-						/>
-					</FooterSection>
-					<!-- Company Links -->
-					<FooterSection
-						title="Company"
-						class="xs:shrink-0"
-					>
-						<FooterLink
-							href="#"
-							text="Pricing"
-						/>
-						<FooterLink
-							href="#"
-							text="Documentation"
-						/>
-						<FooterLink
-							href="#"
-							text="About Us"
-						/>
-					</FooterSection>
+				<div class="py-[33px] gap-x-[57px] flex md:flex-wrap md:gap-y-[24px] mobile:gap-x-[57px] lg:gap-x-[130px] xl:gap-x-[150px] 2xl:gap-x-[113px] xl:py-0 w-full xl:w-full">
+					<div class="lg:order-2 xl:order-1">
+						<!-- Resources Links -->
+						<FooterSection
+							title="Resources"
+							class="xs:shrink-0  relative"
+						>
+							<FooterLink
+								href="#"
+								text="Why IntelliToggle is different"
+							/>
+							<FooterLink
+								href="#"
+								text="Customer Support"
+							/>
+							<FooterLink
+								href="#"
+								text="Terms & conditions"
+							/>
+							<FooterLink
+								href="#"
+								text="Privacy Policy"
+							/>
+						</FooterSection>
+					</div>
+					<div class="lg:order-1 xl:order-2">
+						<!-- Company Links -->
+						<FooterSection
+							title="Company"
+							class="xs:shrink-0"
+						>
+							<FooterLink
+								href="#"
+								text="Pricing"
+							/>
+							<FooterLink
+								href="#"
+								text="Documentation"
+							/>
+							<FooterLink
+								href="#"
+								text="About Us"
+							/>
+						</FooterSection>
+					</div>
 					<!-- Newsletter Subscription -->
-					<div class="hidden md:inline-block 3xl:hidden w-[321px]">
+					<div class="hidden md:inline-block 3xl:hidden w-[321px] lg:order-3 xl:order-3">
 						<h4 class="font-sans font-semibold text-[#1b1d22] xl:text-[#323338] text-[14px] lg:text-[16px] xl:text-[18px] mb-[25px] lg:mb-[23px] xl:mb-[27px]">
 							Subscribe to Newsletter 1
 						</h4>

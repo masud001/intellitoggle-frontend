@@ -1,16 +1,16 @@
 <template>
 	<!-- Hero Section -->
-	<div class="header-section-background absolute top-0 left-0 w-full h-[710px] md:h-[720px] lg:h-[951px] xl:h-[1290px] 2xl:h-[1365px] bg-white" />
+	<div class="header-section-background absolute top-0 left-0 w-full h-[710px] md:h-[720px] lg:h-[925px] xl:h-[1290px] 2xl:h-[1365px] bg-white" />
 	<section class="hero-section">
 		<div class="container-custom mx-auto z-10 flex items-center pt-[14px] pb-[42px] lg:pt-[64px] lg:pb-[69px] xl:pt-[154.2px] xl:pb-[141px]">
 			<div class="hero-content mx-auto w-full mobile:w-[351px] lg:w-[1035px] xl:w-[1040px] text-center">
 				<h1 class="capitalize font-satoshi text-white font-bold xs:text-[27px] sm:text-[33px] mobile:text-[34px] lg:text-[44px] leading-[1.3] md:leading-[1.6] lg:leading-[1.82] xl:leading-[1.3]   xl:text-[64px]  mb-[17px] lg:mb-[6px] xl:mb-[18px]">
-					The First <span class="bg-[#f9a71e] px-[10px] rounded-[8px]">
+					The First <span class="bg-[#f9a71e] px-[10px] lg:py-[5px] xl:py-0 rounded-[8px]">
 						<span class="dart-native-text ">Dart-Native</span>
 					</span> Feature Flag With DartCodeAI
 				</h1>
 
-				<p class="hidden lg:block md:capitalize lg:normal-case font-sans text-[#fefeff] font-semibold text-[14px] lg:text-[22px] xl:text-[32px] leading-[1.25] lg:px-[150px] xl:px-[150px] tracking-wide">
+				<p class="hidden lg:block md:capitalize lg:normal-case font-sans text-[#fefeff] font-semibold text-[14px] lg:text-[22px] xl:text-[32px] leading-[1.25] lg:px-[90px] xl:px-[150px] tracking-wide">
 					Feature flags built for Dart, Ship faster, roll back safely, and scale with AI-powered delivery
 				</p>
 				<p class="lg:hidden font-sans  normal-case text-white text-[14px] tracking-wide">
@@ -21,10 +21,10 @@
 					Starting at just $1/month
 				</p>
 
-				<div class=" mt-[37px] lg:mt-[24px] xl:mt-[32px] w-full lg:w-[552px] mx-auto">
+				<div class=" mt-[37px] lg:mt-[24px] xl:mt-[32px] w-full lg:w-[500px] xl:w-[552px] mx-auto">
 					<!-- Call-to-Action Buttons -->
-					<div class="flex flex-col lg:flex-row gap-2 lg:gap-[24px] xl:gap-[32px] justify-center lg:items-end mt-[-7px] ml-[17px] relative">
-						<div class="flex-1 md:min-w-[243px] lg:min-w-[260px]">
+					<div class="flex flex-col lg:flex-row gap-2 lg:gap-[24px] xl:gap-[32px] justify-center lg:items-end mt-[-7px] xl:ml-[17px] relative">
+						<div class="flex-1 md:min-w-[243px] lg:min-w-[231px]  xl:min-w-[260px]">
 							<!-- Small Text -->
 							<p class=" hidden lg:inline-block font-sans font-medium text-[#dedede] md:text-[14px] lg:text-[16px] md:mb-[8px] lg:mb-[5px] tracking-wider">
 								Valid till 15th September,2026
@@ -38,13 +38,13 @@
 							</Button>
 						</div>
 
-						<div class="flex-1 md:min-w-[243px] lg:min-w-[260px]">
+						<div class="flex-1 md:min-w-[243px] lg:min-w-[231px] xl:min-w-[260px]">
 							<Button
 								variant="outline"
 								button-class="group w-full  pt-[7px] pb-[6px] px-[11px] rounded-[8px] shadow-[0 0 10px 10px rgba(0, 0, 0, 0.05)]"
-								text-class="font-sans group-hover:gradient-text font-semibold text-[14px] lg:text-[22px] xl:text-[21px] tracking-[1.8px] "
+								text-class="font-sans group-hover:gradient-text font-semibold text-[14px] lg:text-[18px] xl:text-[21px] tracking-[1.8px] "
 							>
-								Join AI Early Access
+								Join AI Early Accese
 							</Button>
 						</div>
 					</div>

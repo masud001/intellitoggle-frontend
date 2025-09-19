@@ -25,7 +25,7 @@
 						<Button
 							variant="primary"
 							:class="primaryButtonClass"
-							button-class="w-full xl:w-[310px] shrink-0 xl:py-[10px] xl:px-[30px] rounded-[8px] shadow-[0 0 10px 10px rgba(0, 0, 0, 0.05)]"
+							button-class="w-full lg:w-[300px] xl:w-[310px] shrink-0 xl:py-[10px] xl:px-[30px] rounded-[8px] shadow-[0 0 10px 10px rgba(0, 0, 0, 0.05)]"
 							text-class="font-merriweather-sans md:font-dm-sans xl:font-dm-sans font-semibold text-[14px] lg:text-[22px] xl:text-[19px]"
 							@click="handlePrimaryClick"
 						>
@@ -34,7 +34,7 @@
 
 						<Button
 							variant="outline"
-							button-class="group w-full xl:w-[310px] shrink-0 xl:py-[12px] xl:px-[24px] rounded-[8px] shadow-[0 0 10px 10px rgba(0, 0, 0, 0.05)]"
+							button-class="group w-full lg:w-[300px] xl:w-[310px] shrink-0 xl:py-[12px] xl:px-[24px] rounded-[8px] shadow-[0 0 10px 10px rgba(0, 0, 0, 0.05)]"
 							text-class="font-merriweather-sans md:font-dm-sans xl:font-dm-sans group-hover:gradient-text font-semibold text-[14px] lg:text-[20px] xl:text-[18px] tracking-wide leading-[1.4]"
 							:class="secondaryButtonClass"
 							@click="handleSecondaryClick"

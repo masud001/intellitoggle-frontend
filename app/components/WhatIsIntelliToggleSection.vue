@@ -7,7 +7,7 @@
 					variant="gradient"
 					size="3xl"
 					align="center"
-					class="text-[26px] md:text-[32px] lg:text-[40px] font-bold leading-[1.2] tracking-wide"
+					class="text-[26px] md:text-[32px] lg:text-[30px] xl:text-[40px] font-bold leading-[1.2] tracking-wide"
 				>
 					What Is Intelli Toggle
 				</SectionTitle>
@@ -17,8 +17,8 @@
 			<div class="w-full">
 				<div class="flex flex-col md:flex-row gap-[42px] items-center justify-between">
 					<!-- Text Content -->
-					<div class="2xl:w-[623px] flex flex-col gap-y-[8px] mt-[28px]">
-						<h2 class="hidden md:block font-sans font-semibold xl:text-[32px] md:text-[24px] text-[#1b1d22] leading-[1.2] tracking-wide">
+					<div class=" 2xl:w-[623px] flex flex-col gap-y-[8px] lg:mt-[20px]  xl:mt-[28px]">
+						<h2 class="hidden md:block font-sans font-semibold md:text-[24px] xl:text-[32px]  text-[#1b1d22] lg:leading-[1.1] xl:leading-[1.2] tracking-wide">
 							Your AI Dart App's Control Panel For Feature Releaees
 						</h2>
 						<SectionTitle
@@ -28,7 +28,7 @@
 						>
 							Your AI Dart App's Control Panel For Feature Releases
 						</SectionTitle>
-						<p class=" font-sans text-[14px] xl:text-[18px] font-normal text-[#5f5f60] md:font-medium xl:font-normal tracking-wider leading-[1.3]">
+						<p class=" font-sans text-[14px] lg:text-[13px] xl:text-[18px] font-normal text-[#5f5f60] md:font-medium xl:font-normal tracking-wider xl:leading-[1.3]">
 							IntelliToggle is a 'Dart-Powered' feature flag that lets you turn features on/off instantly in your application without redeploying code. It allows you control roll-outs, run experiments, and fix bugs faster.
 						</p>
 
@@ -37,7 +37,7 @@
 							<h3 class=" font-sans text-[18px] font-semibold text-[#1b1d22] md:text-[#323338] md:text-[22px] xl:text-[24px] xl:text-[#0e121b] tracking-wider">
 								Benefits
 							</h3>
-							<ul class="list-disc relative pl-8">
+							<ul class="list-disc relative pl-6">
 								<li class=" font-sans text-[14px] font-normal text-[#5f5f60] md:font-medium xl:font-normal xl:text-[18px] tracking-wider">
 									Toggle new features without app updates
 								</li>
@@ -52,7 +52,7 @@
 					</div>
 
 					<!-- Dashboard Image -->
-					<div class="2xl:w-[830px] 2xl:h-[618px] shadow-[0_0_10px_10px_rgba(0,0,0,0.05)] bg-linear-to-t from-[#0F1026] to-[#42389E] rounded-[12px] py-[46px] px-[51px]">
+					<div class=" shrink-0 lg:w-[383px] lg:h-[262px] 2xl:w-[830px] 2xl:h-[618px] shadow-[0_0_10px_10px_rgba(0,0,0,0.05)] bg-linear-to-t from-[#0F1026] to-[#42389E] rounded-[12px] py-[46px] px-[51px]">
 						<img
 							src="/images/what-is-intellitoggle.png"
 							alt="IntelliToggle Dashboard"

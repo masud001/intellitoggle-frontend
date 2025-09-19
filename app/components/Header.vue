@@ -29,7 +29,7 @@
 						:active="currentPath === '/'"
 						:class="isSticky ? 'nav-link' : 'nav-link'"
 					>
-						Homc
+						Home
 					</NavLink>
 					<NavLink
 						to="/about"
@@ -59,8 +59,8 @@
 					<Button
 						variant="primary"
 						button-class="py-[11.5px] px-auto md:py-[12px] md:px-[24px] md:min-w-[186px] md:min-h-[47px] md-rounded-[8px]
-						lg:min-w-[214px] lg:min-h-[53px] lg:rounded-[8px]"
-						text-class="md:text-[20px] md:font-dm-sans md:font-semibold leading-[1.5] lg:text-[24px] lg:font-sans lg:font-semibold leading-none"
+						lg:min-w-[150px] xl:min-w-[214px] lg:min-h-[45px] xl:min-h-[53px] lg:rounded-[8px]"
+						text-class="md:text-[20px] md:font-dm-sans md:font-semibold leading-[1.5] lg:text-[20px] xl:text-[24px] lg:font-sans lg:font-semibold leading-none"
 					>
 						Start Sandbox
 					</Button>

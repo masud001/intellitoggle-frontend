@@ -4,7 +4,7 @@
 		<Hero />
 
 		<!-- video section -->
-		<div class="video-section relative left-0 z-10  w-[294px] h-[209px] lg:w-[805px] lg:h-[534px] xl:w-[992px] xl:h-[768px]  2xl:w-[1440px] 2xl:h-[1020px]  mx-auto rounded-[8px] shadow-[0_0_10px_10px_rgba(0,0,0,0.05)] border border-[#99A0AE] bg-white">
+		<div class="video-section relative left-0 z-10  w-[294px] h-[209px] lg:w-[805px] lg:h-[534px] xl:w-[992px] xl:h-[768px]  2xl:w-[1440px] 2xl:h-[1020px] lg:mb-[70px] xl:mb-0  mx-auto rounded-[8px] shadow-[0_0_10px_10px_rgba(0,0,0,0.05)] border border-[#99A0AE] bg-white">
 			<div class="video-play-button absolute inset-0 flex items-center justify-center">
 				<nuxt-img
 					src="/icons/video-play-button-icon.svg"

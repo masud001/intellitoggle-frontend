@@ -1,5 +1,5 @@
 <template>
-	<section class="dart-powered-section py-[32px] md:py-[64px] xl:py-[120px] bg-white">
+	<section class="dart-powered-section py-[32px] md:py-[64px] lg:pb-[105px] xl:py-[120px] bg-white">
 		<div class="container-custom xl:!px-0">
 			<!-- Section Title -->
 			<div class=" mb-[32px] md:mb-[48px] xl:mb-[28px]">
@@ -7,24 +7,24 @@
 					variant="gradient"
 					size="3xl"
 					align="center"
-					class="text-[26px] md:text-[32px] lg:text-[40px] font-bold  mb-[8px] xl:mb-[48px] md:mb-[24px] leading-[1.6]"
+					class="text-[26px] md:text-[32px] lg:text-[34px] xl:text-[40px] font-bold  mb-[8px] xl:mb-[48px] md:mb-[24px] leading-[1.6]"
 				>
 					Dart-Powered Feature Flag
 				</SectionTitle>
 				<SectionTitle
 					variant="solid"
-					text-class=" text-left md:text-center font-sans text-[18px] font-semibold md:font-dm-sans md:text-[24px] md:font-semibold xl:font-sans xl:text-[32px] xl:font-semibold xl:text-[#1a1c3d] leading-[1.2] tracking-wide"
+					text-class=" text-left xl:text-center font-sans text-[18px] font-semibold md:font-dm-sans md:text-[24px] md:font-semibold xl:font-sans xl:text-[32px] xl:font-semibold xl:text-[#1a1c3d] leading-[1.2] tracking-wide"
 				>
 					Not Another Generic Feature Flag Tool
 				</SectionTitle>
-				<p class="text-left max-w-[700px] xl:mx-auto md:text-center font-sans text-[14px] font-normal text-[#5f5f60] md:font-dm-sans md:text-[18px] md:font-normal xl:text-[18px] xl:font-normal mt-[8px] mb-[36px] xl:mt-[8px] xl:mb-[32px] md:mt-[8px] md:mb-[48px] leading-[1.3] tracking-wide">
+				<p class="text-left md:text-center lg:text-left xl:text-center lg:max-w-[608px] xl:max-w-[700px] xl:mx-auto  font-sans text-[14px] font-normal text-[#5f5f60] md:font-dm-sans md:text-[18px] md:font-normal xl:text-[18px] xl:font-normal mt-[8px] mb-[36px] xl:mt-[8px] xl:mb-[32px] md:mt-[8px] md:mb-[48px] leading-[1.3] tracking-wide">
 					Most tools are built for every language, which means extra layers and slower toggles.
 					IntelliToggle is built in Dart, for Dart — so it's faster, safer, and built for your stack.
 				</p>
 			</div>
 
 			<!-- Desktop Layout - Comparison Table -->
-			<div class="hidden xl:block">
+			<div class="hidden lg:block">
 				<div class="w-full 2xl:max-w-[1440px] mx-auto">
 					<div class="bg-white rounded-t-xl shadow-xl overflow-hidden">
 						<!-- Table Header -->
@@ -36,7 +36,7 @@
 									</h4>
 								</div>
 								<div class="text-center">
-									<h4 class=" font-dm-sans text-[18px] md:font-sans md:font-semibold text-[#fefeff] md:text-[24px] capitalize  tracking-wide leading-[1.3] relative left-[-60px]">
+									<h4 class=" font-dm-sans text-[18px] md:font-sans md:font-semibold text-[#fefeff] md:text-[24px] capitalize  tracking-wide leading-[1.3] relative xl:left-[-60px]">
 										IntelliToggle
 									</h4>
 								</div>
@@ -53,7 +53,7 @@
 							<div
 								v-for="(feature, index) in features"
 								:key="feature.id"
-								class="px-[32px] p-[10px]"
+								class="px-[32px] p-[10px] lg:p-[14px] xl:-[10px]"
 							>
 								<div class="grid grid-cols-3 gap-4 items-center">
 									<div class="text-left">
@@ -63,14 +63,14 @@
 										<NuxtImg
 											src="/icons/tick-icon-dark.svg"
 											alt="Check"
-											class="w-[18px] h-[18px] mx-auto relative left-[-66px]"
+											class="w-[18px] h-[18px] mx-auto relative  lg:left-[-46px] xl:left-[-66px]"
 										/>
 									</div>
 									<div class="text-center">
 										<NuxtImg
 											src="/icons/cross-icon.svg"
 											alt="Cross"
-											class="w-[13px] h-[13px] mx-auto"
+											class="w-[13px] h-[13px] mx-auto relative  lg:left-[-70px] xl:left-auto"
 										/>
 									</div>
 								</div>
@@ -81,7 +81,7 @@
 			</div>
 
 			<!-- Tablet & Mobile Slider - Whole Table Slides -->
-			<div class="block xl:hidden">
+			<div class="block lg:hidden">
 				<div class="relative">
 					<!-- Slider Container -->
 					<div

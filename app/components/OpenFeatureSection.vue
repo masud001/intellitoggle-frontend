@@ -1,8 +1,8 @@
 <template>
-	<section class="open-feature-section py-[32px] md:py-[64px] xl:py-[120px] bg-[#edecf6]">
+	<section class="open-feature-section py-[32px] md:py-[64px] lg:pt-[230px] xl:py-[120px] bg-[#edecf6]">
 		<div class="container-custom xl:!px-0">
 			<div class="w-full">
-				<div class="flex flex-col md:flex-row gap-[42px] items-center justify-between">
+				<div class="flex flex-col xl:flex-row gap-[42px] items-center justify-between">
 					<!-- Image Content (Left Side) -->
 					<div class="2xl:w-[830px] 2xl:h-[618px] shadow-[0_0_10px_10px_rgba(0,0,0,0.05)] bg-linear-to-t from-[#0F1026] to-[#42389E] rounded-[12px]">
 						<!-- image for Desktop -->
@@ -26,8 +26,8 @@
 					</div>
 
 					<!-- Text Content (Right Side) -->
-					<div class="2xl:w-[575px] flex flex-col gap-y-[20px] mt-4">
-						<h2 class="hidden md:block font-sans font-semibold xl:text-[32px] md:text-[24px] text-[#1b1d22] leading-[1.2] tracking-wide">
+					<div class=" 2xl:w-[575px] flex flex-col gap-y-[20px] text-center xl:text-left lg:justify-center xl:justify-start xl:mt-4">
+						<h2 class="hidden md:block font-sans font-semibold md:text-[24px] lg:text-[22px] xl:text-[32px]  text-[#1b1d22] leading-[1.2] tracking-wide">
 							Seamless Feature Management with OpenFeature
 						</h2>
 						<SectionTitle
@@ -37,15 +37,15 @@
 						>
 							Seamless Feature Management with OpenFeature
 						</SectionTitle>
-						<p class="font-sans text-[14px] xl:text-[19px] font-normal text-[#5F5F60] md:font-medium xl:font-normal  leading-[110%] tracking-wide">
+						<p class="font-sans text-[14px] lg:text-[16px] xl:text-[19px] font-normal text-[#5F5F60] md:font-medium xl:font-normal  leading-[110%]  tracking-wide">
 							Aortem now integrates with OpenFeature to provide developers with a powerful, standardized approach to feature flagging and dynamic configuration. Ship features faster, test safely, and optimize user experiences effortlessly.
 						</p>
 
-						<div class="mt-5">
+						<div class="lg:mt-[10px] xl:mt-5">
 							<Button
 								variant="primary"
 								text-class="font-merriweather-sans text-[20px] font-bold leading-[1.15]"
-								button-class=" capitalize 2xl:py-[12px] 2xl:px-[24px] rounded-[8px] md:py-[24px] md:px-[36px]  shadow-[0_4px_4px_rgba(0,0,0,0.25)] tracking-wide"
+								button-class=" capitalize lg:py-[13.4px]  2xl:py-[12px] 2xl:px-[24px] rounded-[8px] md:py-[24px] md:px-[36px]  shadow-[0_4px_4px_rgba(0,0,0,0.25)] tracking-wide lg:h-[55px] xl:h-auto"
 							>
 								learn more
 								<img
