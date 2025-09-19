@@ -10,6 +10,14 @@ This is a **Nuxt 4 + Vue 3 + TailwindCSS** implementation of the IntelliToggle h
 
 **GitHub Repository:** [https://github.com/masud001/intellitoggle-frontend.git](https://github.com/masud001/intellitoggle-frontend.git)
 
+## 📸 Screenshots
+
+### Homepage Overview
+![Homepage Screenshot](./screenshots/home-page.png)
+
+### Complete Application View
+![All Images Screenshot](./screenshots/all%20iamge.png)
+
 ## 📋 Assignment Compliance
 
 ### ✅ Requirements Met
