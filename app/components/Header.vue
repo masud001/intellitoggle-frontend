@@ -4,9 +4,9 @@
 		:class="isSticky ? 'sticky-header backdrop-sepia-50 backdrop-blur-sm' : 'normal-header'"
 	>
 		<div class="container-custom xl:!px-0 py-[29px] lg:py-[32px] xl:py-[40px]">
-			<div class="flex items-center justify-between">
+			<div class="flex md:items-center justify-between">
 				<!-- Logo - Left most -->
-				<div class="flex items-center w-[80px] h-[23px] md:w-[212px] md:h-[60px] justify-start flex-shrink-0 logo-container">
+				<div class="flex items-center w-[80px] h-[23px]  md:w-[212px] md:h-[60px] justify-start flex-shrink-0 logo-container">
 					<NuxtLink
 						to="/"
 						class="w-full h-full"
@@ -14,7 +14,7 @@
 						<nuxt-img
 							:src="isSticky ? '/images/logo-white.svg' : '/images/logo-white.svg'"
 							alt="IntelliToggle"
-							class="w-full h-full md:scale-x-120 md:scale-y-110"
+							class="w-full h-full  md:scale-x-120 md:scale-y-110"
 							width="212"
 							height="60"
 							loading="eager"
@@ -391,5 +391,13 @@ onUnmounted(() => {
 button:focus-visible {
   outline: 2px solid rgba(255, 255, 255, 0.3);
   outline-offset: 2px;
+}
+
+@media (min-width: 393px) and (max-width: 768px) {
+  .logo-container img{
+	width: 50%;
+	height: 55%;
+  }
+
 }
 </style>

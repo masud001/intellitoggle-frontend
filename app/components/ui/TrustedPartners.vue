@@ -1,5 +1,5 @@
 <template>
-	<section class="trusted-partners-section py-[64px] xl:py-[120px]  bg-green">
+	<section class="trusted-partners-section py-[64px] mobile:py-[64px] lg:py-[64px] xl:py-[120px]  bg-green">
 		<div class="container-custom">
 			<!-- Section Title -->
 			<div class="text-center mb-[16px] lg:mb-[46px] xl:mb-[40px]">
