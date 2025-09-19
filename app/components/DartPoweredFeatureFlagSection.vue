@@ -1,23 +1,23 @@
 <template>
 	<section class="dart-powered-section py-[32px] md:py-[64px] xl:py-[120px] bg-white">
-		<div class="container-custom">
+		<div class="container-custom xl:!px-0">
 			<!-- Section Title -->
-			<div class=" mb-[32px] md:mb-[48px] xl:mb-[64px]">
+			<div class=" mb-[32px] md:mb-[48px] xl:mb-[28px]">
 				<SectionTitle
 					variant="gradient"
 					size="3xl"
 					align="center"
-					class="text-[26px] md:text-[32px] lg:text-[40px] font-bold leading-[1.2] mb-[8px] xl:mb-[48px] md:mb-[24px]"
+					class="text-[26px] md:text-[32px] lg:text-[40px] font-bold  mb-[8px] xl:mb-[48px] md:mb-[24px] leading-[1.6]"
 				>
 					Dart-Powered Feature Flag
 				</SectionTitle>
 				<SectionTitle
 					variant="solid"
-					text-class=" text-left md:text-center font-sans text-[18px] font-semibold md:font-dm-sans md:text-[24px] md:font-semibold xl:font-sans xl:text-[32px] xl:font-semibold xl:text-[#1a1c3d]"
+					text-class=" text-left md:text-center font-sans text-[18px] font-semibold md:font-dm-sans md:text-[24px] md:font-semibold xl:font-sans xl:text-[32px] xl:font-semibold xl:text-[#1a1c3d] leading-[1.2] tracking-wide"
 				>
 					Not Another Generic Feature Flag Tool
 				</SectionTitle>
-				<p class="text-left max-w-[800px] xl:mx-auto md:text-center font-sans text-[14px] font-normal text-[#5f5f60] md:font-dm-sans md:text-[18px] md:font-normal xl:text-[18px] xl:font-normal mt-[8px] mb-[36px] xl:mt-[8px] xl:mb-[32px] md:mt-[8px] md:mb-[48px]">
+				<p class="text-left max-w-[700px] xl:mx-auto md:text-center font-sans text-[14px] font-normal text-[#5f5f60] md:font-dm-sans md:text-[18px] md:font-normal xl:text-[18px] xl:font-normal mt-[8px] mb-[36px] xl:mt-[8px] xl:mb-[32px] md:mt-[8px] md:mb-[48px] leading-[1.3] tracking-wide">
 					Most tools are built for every language, which means extra layers and slower toggles.
 					IntelliToggle is built in Dart, for Dart — so it's faster, safer, and built for your stack.
 				</p>
@@ -28,20 +28,20 @@
 				<div class="w-full 2xl:max-w-[1440px] mx-auto">
 					<div class="bg-white rounded-t-xl shadow-xl overflow-hidden">
 						<!-- Table Header -->
-						<div class="bg-gradient-to-b from-[#42389e] to-[#0f1026] p-[10px] shadow-[0_0_10px_10px_rgba(0,0,0,0.05)] border border-solid border-[#edecf6]">
+						<div class="bg-gradient-to-b from-[#42389e] to-[#0f1026] pt-[8px] pb-[8px] px-[10px] shadow-[0_0_10px_10px_rgba(0,0,0,0.05)] border border-solid border-[#edecf6]">
 							<div class="grid grid-cols-3 gap-4">
 								<div class="text-left">
-									<h4 class=" font-dm-sans text-[18px] md:font-sans md:font-semibold text-[#fefeff] md:text-[24px] capitalize">
-										Features
+									<h4 class=" font-dm-sans text-[18px] md:font-sans md:font-semibold text-[#fefeff] md:text-[24px] capitalize tracking-wide leading-[1.3]">
+										Featuresr
 									</h4>
 								</div>
 								<div class="text-center">
-									<h4 class=" font-dm-sans text-[18px] md:font-sans md:font-semibold text-[#fefeff] md:text-[24px] capitalize">
+									<h4 class=" font-dm-sans text-[18px] md:font-sans md:font-semibold text-[#fefeff] md:text-[24px] capitalize  tracking-wide leading-[1.3] relative left-[-60px]">
 										IntelliToggle
 									</h4>
 								</div>
 								<div class="text-center">
-									<h4 class=" font-dm-sans text-[18px] md:font-sans md:font-semibold text-[#fefeff] md:text-[24px] capitalize">
+									<h4 class=" font-dm-sans text-[18px] md:font-sans md:font-semibold text-[#fefeff] md:text-[24px] capitalize  tracking-wide leading-[1.3]">
 										Other Feature Flag
 									</h4>
 								</div>
@@ -57,13 +57,13 @@
 							>
 								<div class="grid grid-cols-3 gap-4 items-center">
 									<div class="text-left">
-										<span class="font-sans text-[18px] font-semibold text-[#5f5f60]">{{ feature.name }}</span>
+										<span class="font-sans text-[18px] font-semibold text-[#5f5f60] leading-[1.1] ">{{ feature.name }}</span>
 									</div>
 									<div class="text-center">
 										<NuxtImg
 											src="/icons/tick-icon-dark.svg"
 											alt="Check"
-											class="w-[13px] h-[13px] mx-auto"
+											class="w-[18px] h-[18px] mx-auto relative left-[-66px]"
 										/>
 									</div>
 									<div class="text-center">

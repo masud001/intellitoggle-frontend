@@ -1,13 +1,13 @@
 <template>
 	<section
 		id="dart-ai-hero-v2"
-		class="dart-code-ai-section-v2 py-[32px] md:py-[64px] xl:py-[120px] bg-[url('/ai-section-background.png')] bg-no-repeat bg-center bg-cover"
+		class="dart-code-ai-section-v2 py-[32px] md:py-[64px] xl:py-[120px] bg-[url('/ai-section-background.png')] bg-no-repeat bg-center bg-cover xl:max-h-[1095px]"
 		style="--bg-url: url('/ai-section-background.png')"
 	>
 		<div class="container-custom relative z-10">
 			<div class="w-full max-w-[1384px] mx-auto">
 				<!-- Coming Soon Badge -->
-				<div class="text-center mb-[16px]">
+				<div class="text-center mb-[10px] mt-[20px]">
 					<Button
 						variant="primary"
 						text-class="font-merriweather-sans text-[20px] font-bold leading-[1.15]"
@@ -24,7 +24,7 @@
 						variant="solid"
 						size="3xl"
 						align="center"
-						title-class="text-white font-satoshi text-[26px] md:font-dm-sans md:text-[32px] xl:text-[40px]  font-bold leading-[1.2]"
+						title-class="text-white font-satoshi text-[26px] md:font-dm-sans md:text-[32px] xl:text-[40px]  font-bold leading-[1.2] "
 						text-class="text-white"
 					>
 						DartCodeAI That Actually Changes Flagging
@@ -32,81 +32,83 @@
 				</div>
 
 				<!-- Feature Cards Grid -->
-				<div class="grid grid-cols-1 md:grid-cols-2 gap-[32px] md:gap-y-[32px] xl:gap-y-[64px] md:gap-x-[32px] xl:gap-x-[120px] mb-[48px]">
-					<!-- AutoFlag AI Card -->
-					<div class="glass-card backdrop-blur-[6px] rounded-[12px] p-[32px] text-center shadow-[0_4px_30px_rgba(0,0,0,0.1)] border border-white border-opacity-20">
-						<div class="w-[48px] h-[48px] bg-[#edecf6] rounded-[8px] flex items-center justify-center mx-auto mb-[32px] shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
-							<nuxt-img
-								src="/icons/auto-flag-icon.svg"
-								alt="AutoFlag AI"
-								class="w-[24px] h-[24px]"
-								width="24"
-								height="24"
-							/>
+				<div class=" w-full xl:w-[1440px] mx-auto relative left-[-28px]">
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-[32px] md:gap-y-[32px] xl:gap-y-[64px] md:gap-x-[32px] xl:gap-x-[120px] mb-[48px]">
+						<!-- AutoFlag AI Card -->
+						<div class="glass-card xl:w-[660px] xl:h-[196px] backdrop-blur-[6px] rounded-[12px] p-[24px] text-center shadow-[0_4px_30px_rgba(0,0,0,0.1)] border border-white border-opacity-20">
+							<div class="w-[48px] h-[48px] bg-[#edecf6] rounded-[8px] flex items-center justify-center mx-auto mb-[32px] shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
+								<nuxt-img
+									src="/icons/auto-flag-icon.svg"
+									alt="AutoFlag AI"
+									class="w-[24px] h-[24px]"
+									width="24"
+									height="24"
+								/>
+							</div>
+							<h3 class=" font-sans xl:font-sans md:font-dm-sans text-[24px] font-semibold text-[#fefeff] md:text-white mb-[0px] ">
+								AutoFlag AI (LLM-Assisted Flag Creationnn)
+							</h3>
+							<p class="font-sans text-[14px] md:text-[18px] md:font-dm-sans font-normal text-[#dedede] md:text-[#edecf6] leading-[1.1] tracking-wide">
+								Create new flags just by typing what you need. The AI names it, sets rules, and configures targeting for you.
+							</p>
 						</div>
-						<h3 class=" font-sans xl:font-sans md:font-dm-sans text-[24px] font-semibold text-[#fefeff] md:text-white mb-[16px] md:leading-[1.4]">
-							AutoFlag AI (LLM-Assisted Flag Creation)
-						</h3>
-						<p class="font-sans text-[14px] md:text-[18px] md:font-dm-sans font-normal text-[#dedede] md:text-[#edecf6] md:leading-[1.6] ">
-							Create new flags just by typing what you need. The AI names it, sets rules, and configures targeting for you.
-						</p>
-					</div>
 
-					<!-- SmartRamp AI Card -->
-					<div class="glass-card backdrop-blur-[6px] rounded-[12px] p-[32px] text-center shadow-[0_4px_30px_rgba(0,0,0,0.1)] border border-white border-opacity-20">
-						<div class="w-[48px] h-[48px] bg-[#edecf6] rounded-[8px] flex items-center justify-center mx-auto mb-[32px] shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
-							<nuxt-img
-								src="/icons/smart-ram-flag-icon.svg"
-								alt="SmartRamp AI"
-								class="w-[24px] h-[24px]"
-								width="24"
-								height="24"
-							/>
+						<!-- SmartRamp AI Card -->
+						<div class="glass-card xl:w-[660px] xl:h-[196px] backdrop-blur-[6px] rounded-[12px] p-[24px] text-center shadow-[0_4px_30px_rgba(0,0,0,0.1)] border border-white border-opacity-20">
+							<div class="w-[48px] h-[48px] bg-[#edecf6] rounded-[8px] flex items-center justify-center mx-auto mb-[32px] shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
+								<nuxt-img
+									src="/icons/smart-ram-flag-icon.svg"
+									alt="SmartRamp AI"
+									class="w-[24px] h-[24px]"
+									width="24"
+									height="24"
+								/>
+							</div>
+							<h3 class=" font-sans xl:font-sans md:font-dm-sans text-[24px] font-semibold text-[#fefeff] md:text-white mb-[0px] ">
+								SmartRamp AI (AI-Driven Rollout Optimization)
+							</h3>
+							<p class="font-sans text-[14px] md:text-[18px] md:font-dm-sans font-normal text-[#dedede] md:text-[#edecf6] leading-[1.1] tracking-wide">
+								Rollouts that adjust themselves. AI expands, pauses, or rolls back based on real-time metrics.
+							</p>
 						</div>
-						<h3 class=" font-sans xl:font-sans md:font-dm-sans text-[24px] font-semibold text-[#fefeff] md:text-white mb-[16px] md:leading-[1.4]">
-							SmartRamp AI (AI-Driven Rollout Optimization)
-						</h3>
-						<p class="font-sans text-[14px] md:text-[18px] md:font-dm-sans font-normal text-[#dedede] md:text-[#edecf6] md:leading-[1.6] ">
-							Rollouts that adjust themselves. AI expands, pauses, or rolls back based on real-time metrics.
-						</p>
-					</div>
 
-					<!-- ExplainFlags AI Card -->
-					<div class="glass-card backdrop-blur-[6px] rounded-[12px] p-[32px] text-center shadow-[0_4px_30px_rgba(0,0,0,0.1)] border border-white border-opacity-20">
-						<div class="w-[48px] h-[48px] bg-[#edecf6] rounded-[8px] flex items-center justify-center mx-auto mb-[32px] shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
-							<nuxt-img
-								src="/icons/explain-flag-icon.svg"
-								alt="ExplainFlags AI"
-								class="w-[24px] h-[24px]"
-								width="24"
-								height="24"
-							/>
+						<!-- ExplainFlags AI Card -->
+						<div class="glass-card xl:w-[660px] xl:h-[196px] backdrop-blur-[6px] rounded-[12px] p-[24px] text-center shadow-[0_4px_30px_rgba(0,0,0,0.1)] border border-white border-opacity-20">
+							<div class="w-[48px] h-[48px] bg-[#edecf6] rounded-[8px] flex items-center justify-center mx-auto mb-[32px] shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
+								<nuxt-img
+									src="/icons/explain-flag-icon.svg"
+									alt="ExplainFlags AI"
+									class="w-[24px] h-[24px]"
+									width="24"
+									height="24"
+								/>
+							</div>
+							<h3 class=" font-sans xl:font-sans md:font-dm-sans text-[24px] font-semibold text-[#fefeff] md:text-white mb-[0px] ">
+								ExplainFlags AI (LLM Root-Cause + Insights)
+							</h3>
+							<p class="font-sans text-[14px] md:text-[18px] md:font-dm-sans font-normal text-[#dedede] md:text-[#edecf6] leading-[1.1] tracking-wide">
+								Understand issues instantly with AI-generated, plain-language insights tied to your flags.
+							</p>
 						</div>
-						<h3 class=" font-sans xl:font-sans md:font-dm-sans text-[24px] font-semibold text-[#fefeff] md:text-white mb-[16px] md:leading-[1.4]">
-							ExplainFlags AI (LLM Root-Cause + Insights)
-						</h3>
-						<p class="font-sans text-[14px] md:text-[18px] md:font-dm-sans font-normal text-[#dedede] md:text-[#edecf6] md:leading-[1.6] ">
-							Understand issues instantly with AI-generated, plain-language insights tied to your flags.
-						</p>
-					</div>
 
-					<!-- AutoSegment AI Card -->
-					<div class="glass-card backdrop-blur-[6px] rounded-[12px] p-[32px] text-center shadow-[0_4px_30px_rgba(0,0,0,0.1)] border border-white border-opacity-20">
-						<div class="w-[48px] h-[48px] bg-[#edecf6] rounded-[8px] flex items-center justify-center mx-auto mb-[32px] shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
-							<nuxt-img
-								src="/icons/auto-segment-flag.svg"
-								alt="AutoSegment AI"
-								class="w-[24px] h-[24px]"
-								width="24"
-								height="24"
-							/>
+						<!-- AutoSegment AI Card -->
+						<div class="glass-card xl:w-[660px] xl:h-[196px] backdrop-blur-[6px] rounded-[12px] p-[24px] text-center shadow-[0_4px_30px_rgba(0,0,0,0.1)] border border-white border-opacity-20">
+							<div class="w-[48px] h-[48px] bg-[#edecf6] rounded-[8px] flex items-center justify-center mx-auto mb-[32px] shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
+								<nuxt-img
+									src="/icons/auto-segment-flag.svg"
+									alt="AutoSegment AI"
+									class="w-[24px] h-[24px]"
+									width="24"
+									height="24"
+								/>
+							</div>
+							<h3 class=" font-sans xl:font-sans md:font-dm-sans text-[24px] font-semibold text-[#fefeff] md:text-white mb-[0px] ">
+								AutoSegment AI (Behavioral Segmentation)
+							</h3>
+							<p class="font-sans text-[14px] md:text-[18px] md:font-dm-sans font-normal text-[#dedede] md:text-[#edecf6] leading-[1.1] tracking-wide">
+								Target the right users automatically. AI builds segments from live behavior—no manual rules.
+							</p>
 						</div>
-						<h3 class=" font-sans xl:font-sans md:font-dm-sans text-[24px] font-semibold text-[#fefeff] md:text-white mb-[16px] md:leading-[1.4]">
-							AutoSegment AI (Behavioral Segmentation)
-						</h3>
-						<p class="font-sans text-[14px] md:text-[18px] md:font-dm-sans font-normal text-[#dedede] md:text-[#edecf6] md:leading-[1.6] ">
-							Target the right users automatically. AI builds segments from live behavior—no manual rules.
-						</p>
 					</div>
 				</div>
 
@@ -118,42 +120,43 @@
 				</div>
 
 				<!-- Email Subscription Form -->
-				<div class=" mx-auto glass-card backdrop-blur-[6px] rounded-[12px] p-[32px] text-center shadow-[0_4px_30px_rgba(0,0,0,0.1)] border border-white border-opacity-20">
-					<div class="flex flex-col xl:flex-row items-center justify-between">
-						<div class="flex-1 text-center xl:text-left w-[200px] md:w-[300px] mb-[24px] xl:mb-[0]">
-							<h3 class="font-sans md:font-dm-sans text-[16px] md:text-[24px] font-semibold text-white  leading-[1.3]">
-								<span class="text-[#f9a71e]">Be The First</span>
-								To Try Out Our New AI Features
-							</h3>
-						</div>
-
-						<form
-							class="flex-1"
-							@submit.prevent="handleEmailSubmit"
-						>
-							<div class="flex items-center relative border border-[#edecf6] rounded-[8px] pl-[17px] pr-[8px] py-[8px] w-full max-w-[474px] justify-self-end">
-								<input
-									v-model="email"
-									type="email"
-									placeholder="Enter email address"
-									class="flex-1 w-full h-full  bg-transparent  text-white placeholder:text-[rgba(237, 236, 246, 0.5)] focus:outline-none transition-all duration-300 hover:border-white/40 text-[10px] md:text-[16px] font-medium"
-									required
-								>
-
-								<div class="">
-									<Button
-										variant="primary"
-										size="sm"
-										button-class="px-[10px] xl:px-[32px] py-[10px] rounded-[8px] font-semibold text-[18px] shadow-[0_4px_12px_rgba(0,0,0,0.2)] transition-all duration-300 hover:-translate-y-[2px] hover:shadow-[0_6px_20px_rgba(0,0,0,0.3)] hover:translate-y-[0px]"
-										text-class="font-sans font-semibold text-[18px]"
-										@click="handleEmailSubmit"
-									>
-										<span class="hidden xl:block">Join AI Early Access</span>
-										<span class="xl:hidden text-[15px]">Get Access</span>
-									</Button>
-								</div>
+				<div class=" w-full xl:w-[1440px] mx-auto relative left-[-28px] xl:h-[115px]">
+					<div class=" mx-auto glass-card backdrop-blur-[6px] rounded-[12px] py-[28px] px-[33px] text-center shadow-[0_4px_30px_rgba(0,0,0,0.1)] border border-white border-opacity-20">
+						<div class="flex flex-col xl:flex-row items-center justify-between">
+							<div class="flex-1 text-center xl:text-left w-[200px] md:w-[300px] mb-[24px] xl:mb-[0px]">
+								<h3 class="font-sans md:font-dm-sans text-[16px] md:text-[24px] font-semibold text-white  leading-[1.4] tracking-wide">
+									<span class="text-[#f9a71e]">Be The First</span>
+									To Try Out Our New AI Features
+								</h3>
 							</div>
-						</form>
+
+							<form
+								class="flex-1"
+								@submit.prevent="handleEmailSubmit"
+							>
+								<div class="flex items-center relative border border-[#edecf6] rounded-[8px] pl-[17px] pr-[8px] py-[9px] w-full max-w-[474px] h-[55px] justify-self-end left-[-22px] top-[0px]">
+									<input
+										v-model="email"
+										type="email"
+										placeholder="Enter email address"
+										class="flex-1 w-full h-full  bg-transparent  text-white placeholder:text-[rgba(237, 236, 246, 0.5)] focus:outline-none transition-all duration-300 hover:border-white/40 text-[10px] md:text-[14px] placeholder:font-normal font-medium"
+										required
+									>
+
+									<div class=" shrink-0">
+										<Button
+											variant="primary"
+											button-class="px-[10px] py-[10px] rounded-[4px] font-semibold text-[18px] shadow-[0_4px_12px_rgba(0,0,0,0.2)] transition-all duration-300 hover:-translate-y-[2px] hover:shadow-[0_6px_20px_rgba(0,0,0,0.3)] hover:translate-y-[0px] relative left-[4px] xl:!w-[202px]"
+											text-class="font-sans font-semibold text-[18px]"
+											@click="handleEmailSubmit"
+										>
+											<span class="hidden xl:block">Join AI Early Access</span>
+											<span class="xl:hidden text-[15px]">Get Access</span>
+										</Button>
+									</div>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>

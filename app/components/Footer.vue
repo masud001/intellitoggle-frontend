@@ -1,21 +1,21 @@
 <template>
 	<footer class="bg-[#e1e2f0] py-[64px] xl:py-[100px]">
-		<div class="container-custom">
-			<div class="lg:flex lg:gap-x-[73px] xl:gap-x-[80px] 2xl:gap-x-[155px]">
+		<div class="container-custom xl:!px-0">
+			<div class="lg:flex lg:gap-x-[73px] xl:gap-x-[80px] 2xl:gap-x-[265px]">
 				<!-- Company Info & Social -->
-				<div class=" w-full max-w-[359px]">
-					<div class="flex items-center">
+				<div class=" w-full max-w-[340px] flex flex-col gap-[5px]">
+					<div class="flex items-center relative xl:top-[-10px] xl:left-[10px] ">
 						<nuxt-img
 							src="/images/logo-dark.svg"
 							alt="IntelliToggle"
-							class="w-[170px] h-[50.8px]"
+							class="w-[170px] h-[70.8px] scale-x-[106%] scale-y-[114%]"
 							width="170px"
 							height="50.8px"
 							loading="eager"
 							preload
 						/>
 					</div>
-					<p class="font-sans font-normal text-[14px] xl:text-[18px] text-[#5f5f60] lg:text-[#263238] xl:text-[#4a4b4d] my-[30px] lg:mt-[9px] lg:mb-[25px] xl:my-[20px]">
+					<p class=" relative xl:left-[5px] font-sans font-normal text-[14px] xl:text-[18px] text-[#5f5f60] lg:text-[#263238] xl:text-[#4a4b4d] my-[30px] lg:mt-[9px] lg:mb-[25px] xl:py-[0px] xl:mt-[0px] xl:mb-[10px] xl:leading-[1.2] tracking-wide">
 						IntelliToggle is built by AORTEM, a company focused on powering scalable, multi-platform developer tools.
 					</p>
 					<a
@@ -32,30 +32,11 @@
 					</a>
 				</div>
 
-				<div class="py-[33px] gap-x-[57px] flex md:flex-wrap md:gap-y-[24px] mobile:gap-x-[57px] xl:gap-x-[100px] 2xl:gap-x-[66px] xl:py-0 w-full xl:w-full">
-					<!-- Company Links -->
-					<FooterSection
-						title="Company"
-						class="xs:shrink-0 3xl:flex-1"
-					>
-						<FooterLink
-							href="#"
-							text="Pricing"
-						/>
-						<FooterLink
-							href="#"
-							text="Documentation"
-						/>
-						<FooterLink
-							href="#"
-							text="About Us"
-						/>
-					</FooterSection>
-
+				<div class="py-[33px] gap-x-[57px] flex md:flex-wrap md:gap-y-[24px] mobile:gap-x-[57px] xl:gap-x-[150px] 2xl:gap-x-[113px] xl:py-0 w-full xl:w-full">
 					<!-- Resources Links -->
 					<FooterSection
 						title="Resources"
-						class="xs:shrink-0 3xl:flex-1"
+						class="xs:shrink-0  relative"
 					>
 						<FooterLink
 							href="#"
@@ -74,10 +55,28 @@
 							text="Privacy Policy"
 						/>
 					</FooterSection>
+					<!-- Company Links -->
+					<FooterSection
+						title="Company"
+						class="xs:shrink-0"
+					>
+						<FooterLink
+							href="#"
+							text="Pricing"
+						/>
+						<FooterLink
+							href="#"
+							text="Documentation"
+						/>
+						<FooterLink
+							href="#"
+							text="About Us"
+						/>
+					</FooterSection>
 					<!-- Newsletter Subscription -->
 					<div class="hidden md:inline-block 3xl:hidden w-[321px]">
 						<h4 class="font-sans font-semibold text-[#1b1d22] xl:text-[#323338] text-[14px] lg:text-[16px] xl:text-[18px] mb-[25px] lg:mb-[23px] xl:mb-[27px]">
-							Subscribe to Newsletter
+							Subscribe to Newsletter 1
 						</h4>
 						<div class="flex">
 							<input
@@ -109,8 +108,8 @@
 					</div>
 				</div>
 				<!-- Newsletter Subscription -->
-				<div class="hidden 3xl:inline-block shrink-0 w-[321px]">
-					<h4 class="font-sans font-semibold text-[#1b1d22] xl:text-[#323338] text-[14px] lg:text-[16px] xl:text-[18px] mb-[25px] lg:mb-[23px] xl:mb-[27px]">
+				<div class="hidden 3xl:inline-block shrink-0 w-[321px] self-center">
+					<h4 class="font-sans font-semibold text-[#1b1d22] xl:text-[#323338] text-[14px] lg:text-[16px] xl:text-[18px] mb-[25px] lg:mb-[23px] xl:mb-[27px] tracking-wide">
 						Subscribe to Newsletter
 					</h4>
 					<div class="flex">
@@ -119,8 +118,8 @@
 							placeholder="Enter email address"
 							class="flex-1 px-[16.7px] py-[13.4px] text-[#8a8a8a] text-[11.7px] outline-none focus:outline-none bg-white rounded-l-[6.7px] font-normal font-sans leading-[1.57px]"
 						>
-						<button class="text-[13px] font-semibold font-sans capitalize px-[24px] py-[10.7px] bg-[#f9a71e] rounded-r-[6.7px]">
-							<span class="text-white custom-text capitalize">subscribe</span>
+						<button class="text-[13px] font-semibold font-sans capitalize px-[28px] py-[10.7px] bg-[#f9a71e] rounded-r-[6.7px]">
+							<span class="text-white custom-text capitalize">eubscribe</span>
 						</button>
 					</div>
 				</div>

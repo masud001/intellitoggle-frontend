@@ -1,13 +1,13 @@
 <template>
 	<section class="control-power-section py-[32px] md:py-[64px] xl:py-[120px] bg-white">
-		<div class="container-custom">
+		<div class="container-custom xl:!px-0">
 			<!-- Section Title -->
-			<div class="text-center mb-[15px] md:mb-[57px] xl:mb-[48px]">
+			<div class="text-center mb-[15px] md:mb-[57px] xl:mb-[45px]">
 				<SectionTitle
 					variant="gradient"
 					size="3xl"
 					align="center"
-					class="font-bold font-satoshi text-[26px] lg:font-bold lg:font-dm-sans lg:text-[32px] xl:font-bold xl:font-satoshi xl:text-[40px]"
+					class="font-bold font-satoshi text-[26px] lg:font-bold lg:font-dm-sans lg:text-[32px] xl:font-bold xl:font-satoshi xl:text-[41px] tracking-[1%] !leading-[1.65]"
 				>
 					Control & Power-focused
 				</SectionTitle>
@@ -22,7 +22,7 @@
 						class="control-item"
 					>
 						<!-- Mockup Image -->
-						<div class="mockup-container mb-6">
+						<div class="mockup-container mb-[7px]">
 							<img
 								:src="item.mockupImage"
 								:alt="item.title"
@@ -33,16 +33,16 @@
 
 						<!-- Content -->
 						<div class=" text-left">
-							<h3 class="font-sans text-[20px] xl:text-[24px] font-semibold xl:mt-[16px] text-[#0e121b] xl:text-[#1a1c3d] mb-[8px] capitalize">
+							<h3 class="font-sans text-[20px] xl:text-[24px] font-semibold xl:mt-[16px] text-[#0e121b] xl:text-[#1a1c3d] mb-[8px] capitalize tracking-wide leading-[1.3]">
 								{{ item.title }}
 							</h3>
-							<p class="xl:font-sans xl:text-[18px] xl:font-normal xl:text-[#5f5f60] mb-[16px] xl:mb-[32px]">
+							<p class="xl:font-sans xl:text-[18px] xl:font-normal xl:text-[#5f5f60] mb-[16px] xl:mb-[30px] tracking-wide leading-[1.1]">
 								{{ item.description }}
 							</p>
 							<Button
 								variant="outline"
-								button-class="w-full max-w-[234px] py-[12px] px-[24px]"
-								text-class="font-sans text-[14px] font-semibold xl:text-[18px] xl:font-normal "
+								button-class="w-full max-w-[234px] py-[11px] px-[24px]"
+								text-class="font-sans text-[14px] font-semibold xl:text-[18px] xl:font-normal tracking-wider"
 							>
 								View Documentation
 							</Button>

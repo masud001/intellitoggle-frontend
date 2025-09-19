@@ -5,7 +5,7 @@
 			<div class="text-center mb-[16px] lg:mb-[40px]">
 				<SectionTitle
 					variant="gradient"
-					title-class="text-red-500"
+					title-class="text-red-500 tracking-wide"
 					class="mx-auto font-sans text-[14px] md:text-[16px] xl:text-[24px] md:font-normal xl:font-semibold"
 				>
 					Trusted by various engineering teams
@@ -30,8 +30,8 @@
 							:title="partner.name"
 							class="partner-logo"
 							:style="{
-								height: logoStyles.height,
-								width: logoStyles.maxWidth,
+								height: partner.height || logoStyles.height,
+								width: partner.width || logoStyles.maxWidth,
 							}"
 							loading="lazy"
 							@error="handleImageError($event, partner)"
@@ -63,7 +63,11 @@
 							<div
 								v-for="(partner, index) in infinitePartners"
 								:key="`${partner.id}-${index}`"
-								class="flex-shrink-0 w-[120px] h-[60px] flex justify-center items-center"
+								class="flex-shrink-0 flex justify-center items-center"
+								:style="{
+									width: partner.width || '120px',
+									height: partner.height || '60px',
+								}"
 							>
 								<img
 									:src="partner.logo"
@@ -92,6 +96,8 @@ interface Partner {
 	logo: string;
 	website?: string;
 	fallbackLogo?: string;
+	width?: string;
+	height?: string;
 }
 
 // Define component props
@@ -130,32 +136,42 @@ const props = withDefaults(defineProps<Props>(), {
 		{
 			id: "google-cloud",
 			name: "Google Cloud",
-			logo: "/images/partners/google-cloud.svg",
+			logo: "/images/partners/google-cloud.png",
 			website: "https://cloud.google.com",
+			width: "155px",
+			height: "60px",
 		},
 		{
 			id: "aws",
 			name: "Amazon Web Services",
-			logo: "/images/partners/amazon_aws.svg",
+			logo: "/images/partners/amazon_aws.png",
 			website: "https://aws.amazon.com",
+			width: "120px",
+			height: "60px",
 		},
 		{
 			id: "microsoft-azure",
 			name: "Microsoft Azure",
-			logo: "/images/partners/microsoft_azure.svg",
+			logo: "/images/partners/microsoft_azure.png",
 			website: "https://azure.microsoft.com",
+			width: "120px",
+			height: "60px",
 		},
 		{
 			id: "digital-ocean",
 			name: "Digital Ocean",
-			logo: "/images/partners/digitalocean.svg",
+			logo: "/images/partners/digitalocean.png",
 			website: "https://www.digitalocean.com",
+			width: "120px",
+			height: "60px",
 		},
 		{
 			id: "ibm",
 			name: "IBM",
-			logo: "/images/partners/ibm.svg",
+			logo: "/images/partners/ibm.png",
 			website: "https://www.ibm.com",
+			width: "120px",
+			height: "60px",
 		},
 	],
 	showTitle: true,
@@ -186,87 +202,32 @@ const MIN_TRANSLATE_X = -1000; // Minimum allowed translateX value
 
 // Computed properties
 const displayPartners = computed(() => {
-	// Check if we're on mobile or tablet to use mobile-tablet specific images
 	// Default to desktop for SSR
 	const currentWidth = typeof window !== "undefined" ? windowWidth.value : 1024;
-	const isMobileOrTablet = currentWidth < 1024; // Mobile and tablet
-
-	// Create partners with mobile-tablet specific images if on mobile or tablet
-	const partnersWithMobileImages = props.partners.map((partner) => {
-		if (isMobileOrTablet) {
-			// Use mobile-tablet specific images for mobile and tablet devices
-			let mobileTabletImagePath = partner.logo.replace("/images/partners/", "/images/partners/mobile-tablet/");
-
-			// Handle special case for google-cloud which doesn't have -mobile suffix
-			if (partner.logo.includes("google-cloud")) {
-				// google-cloud.svg stays as google-cloud.svg in mobile-tablet folder
-			}
-			else {
-				// Other images get -mobile suffix
-				mobileTabletImagePath = mobileTabletImagePath.replace(".svg", "-mobile.svg");
-			}
-
-			return {
-				...partner,
-				logo: mobileTabletImagePath,
-				fallbackLogo: partner.logo, // Keep original as fallback
-			};
-		}
-		return partner;
-	});
 
 	// Desktop: show all partners
 	// Tablet: show at least 5 partners (or all if less than 5)
 	if (currentWidth >= 1024) {
-		return partnersWithMobileImages;
+		return props.partners;
 	}
 	else if (currentWidth >= 768) {
 		// Show at least 5 partners on tablet, or all if less than 5
-		return partnersWithMobileImages.slice(0, Math.max(5, partnersWithMobileImages.length));
+		return props.partners.slice(0, Math.max(5, props.partners.length));
 	}
-	return partnersWithMobileImages;
+	return props.partners;
 });
 
 const logoClasses = computed(() => {
 	return " hover:opacity-100 transition-opacity duration-300 cursor-pointer";
 });
 
-// Create infinite loop partners array with mobile-tablet specific images
+// Create infinite loop partners array
 const infinitePartners = computed(() => {
 	// Create enough duplicates to ensure seamless infinite scrolling
 	// We need at least 3 sets to handle the reset point smoothly
 	const duplicates = 6; // 6 sets of partners for smooth infinite loop
 
-	// Check if we're on mobile to use mobile-tablet specific images (only for mobile slider)
-	// Default to desktop for SSR
-	const currentWidth = typeof window !== "undefined" ? windowWidth.value : 1024;
-	const isMobile = currentWidth < 768; // Only mobile
-
-	// Create partners with mobile-tablet specific images if on mobile
-	const partnersWithMobileImages = props.partners.map((partner) => {
-		if (isMobile) {
-			// Use mobile-tablet specific images for mobile devices
-			let mobileTabletImagePath = partner.logo.replace("/images/partners/", "/images/partners/mobile-tablet/");
-
-			// Handle special case for google-cloud which doesn't have -mobile suffix
-			if (partner.logo.includes("google-cloud")) {
-				// google-cloud.svg stays as google-cloud.svg in mobile-tablet folder
-			}
-			else {
-				// Other images get -mobile suffix
-				mobileTabletImagePath = mobileTabletImagePath.replace(".svg", "-mobile.svg");
-			}
-
-			return {
-				...partner,
-				logo: mobileTabletImagePath,
-				fallbackLogo: partner.logo, // Keep original as fallback
-			};
-		}
-		return partner;
-	});
-
-	return Array(duplicates).fill(partnersWithMobileImages).flat();
+	return Array(duplicates).fill(props.partners).flat();
 });
 
 // Dynamic logo styles based on props

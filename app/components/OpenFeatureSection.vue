@@ -1,20 +1,21 @@
 <template>
 	<section class="open-feature-section py-[32px] md:py-[64px] xl:py-[120px] bg-[#edecf6]">
-		<div class="container-custom ">
-			<div class="feature-section">
-				<div class="grid xl:grid-cols-2 items-center text-center xl:text-left xl:gap-x-[100px] 2xl:gap-x-[150px] 4xl:gap-x-[275px] h-full">
-					<div class="">
+		<div class="container-custom xl:!px-0">
+			<div class="w-full">
+				<div class="flex flex-col md:flex-row gap-[42px] items-center justify-between">
+					<!-- Image Content (Left Side) -->
+					<div class="2xl:w-[830px] 2xl:h-[618px] shadow-[0_0_10px_10px_rgba(0,0,0,0.05)] bg-linear-to-t from-[#0F1026] to-[#42389E] rounded-[12px]">
 						<!-- image for Desktop -->
 						<img
 							src="/images/feature-management-image-desktop.png"
 							class="w-full h-full hidden xl:block"
-							alt="feature "
+							alt="feature"
 						>
 						<!-- image for table  -->
 						<img
 							src="/images/feature-management-image-tablet.png"
 							class="w-full h-full hidden md:block xl:hidden"
-							alt="feature "
+							alt="feature"
 						>
 						<!-- image for mobile  -->
 						<img
@@ -23,21 +24,37 @@
 							alt="feature"
 						>
 					</div>
-					<div class="mt-[21px] md:mt-[46px] xl:mt-0 2xl:mt-0 ">
-						<h3 class="font-sans font-semibold text-[18px] text-[#1b1d22] md:text-[#323338] xl:text-[#0e121b] md:text-[22px] 3xl:text-[32px] mb-[16px]">
+
+					<!-- Text Content (Right Side) -->
+					<div class="2xl:w-[575px] flex flex-col gap-y-[20px] mt-4">
+						<h2 class="hidden md:block font-sans font-semibold xl:text-[32px] md:text-[24px] text-[#1b1d22] leading-[1.2] tracking-wide">
 							Seamless Feature Management with OpenFeature
-						</h3>
-						<p class="font-sans px-[25px] xl:px-0 font-normal text-[14px] md:text-[16px] xl:text-[18px] mb-[32px] xl:text-[#5f5f60]">
+						</h2>
+						<SectionTitle
+							align="left"
+							variant="gradient"
+							class="font-satoshi font-bold text-[26px] md:hidden"
+						>
+							Seamless Feature Management with OpenFeature
+						</SectionTitle>
+						<p class="font-sans text-[14px] xl:text-[19px] font-normal text-[#5F5F60] md:font-medium xl:font-normal  leading-[110%] tracking-wide">
 							Aortem now integrates with OpenFeature to provide developers with a powerful, standardized approach to feature flagging and dynamic configuration. Ship features faster, test safely, and optimize user experiences effortlessly.
 						</p>
-						<Button
-							variant="primary"
-							text-class="font-merriweather-sans text-[20px] font-bold leading-[1.15]"
-							right-icon="🚀"
-							button-class=" capitalize 2xl:py-[12px] 2xl:px-[24px] rounded-[8px] md:py-[24px] md:px-[36px]  shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
-						>
-							learn more
-						</Button>
+
+						<div class="mt-5">
+							<Button
+								variant="primary"
+								text-class="font-merriweather-sans text-[20px] font-bold leading-[1.15]"
+								button-class=" capitalize 2xl:py-[12px] 2xl:px-[24px] rounded-[8px] md:py-[24px] md:px-[36px]  shadow-[0_4px_4px_rgba(0,0,0,0.25)] tracking-wide"
+							>
+								learn more
+								<img
+									src="/icons/arrow-right-icon.svg"
+									alt="arrow"
+									class="ml-2 !h-[24px] !w-[24px]"
+								>
+							</Button>
+						</div>
 					</div>
 				</div>
 			</div>
