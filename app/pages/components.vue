@@ -108,14 +108,14 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import SystemDesignOverview from "~/components/ui/SystemDesignOverview.vue";
+import SystemDesignOverview from "~/components/system-design/SystemDesignOverview.vue";
 import TypographyShowcase from "~/components/system-design/TypographyShowcase.vue";
 import ColorsShowcase from "~/components/system-design/ColorsShowcase.vue";
 import SpacingShowcase from "~/components/system-design/SpacingShowcase.vue";
-import ButtonShowcase from "~/components/ui/ButtonShowcase.vue";
-import NavLinkShowcase from "~/components/ui/NavLinkShowcase.vue";
-import SectionTitleShowcase from "~/components/ui/SectionTitleShowcase.vue";
-import TrustedPartnersShowcase from "~/components/ui/TrustedPartnersShowcase.vue";
+import ButtonShowcase from "~/components/system-design/ButtonShowcase.vue";
+import NavLinkShowcase from "~/components/system-design/NavLinkShowcase.vue";
+import SectionTitleShowcase from "~/components/system-design/SectionTitleShowcase.vue";
+import TrustedPartnersShowcase from "~/components/system-design/TrustedPartnersShowcase.vue";
 import ThemeShowcase from "~/components/system-design/ThemeShowcase.vue";
 import BreakpointTest from "~/components/BreakpointTest.vue";
 

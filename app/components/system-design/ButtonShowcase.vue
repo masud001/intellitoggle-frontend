@@ -488,7 +488,7 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import Button from "./Button.vue";
+import Button from "../ui/Button.vue";
 
 // Reactive state for interactive examples
 const isLoading = ref(false);

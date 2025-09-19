@@ -264,5 +264,5 @@
 </template>
 
 <script setup>
-import SectionTitle from "./SectionTitle.vue";
+import SectionTitle from "../ui/SectionTitle.vue";
 </script>

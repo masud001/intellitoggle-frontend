@@ -463,7 +463,7 @@
 
 <script setup>
 import { ref, computed } from "vue";
-import TrustedPartners from "./TrustedPartners.vue";
+import TrustedPartners from "../ui/TrustedPartners.vue";
 
 // Demo state
 const selectedPartnerCount = ref(5);

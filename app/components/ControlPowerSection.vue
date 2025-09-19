@@ -1,6 +1,6 @@
 <template>
 	<section class="control-power-section py-[32px] md:py-[64px] xl:py-[120px] bg-white">
-		<div class="container-custom xl:!px-0">
+		<div class="container-custom">
 			<!-- Section Title -->
 			<div class="text-center mb-[15px] md:mb-[57px] lg:mb-[75px] xl:mb-[45px]">
 				<SectionTitle

@@ -1,6 +1,6 @@
 <template>
 	<section class="py-[32px] md:py-[64px] xl:py-[120px] bg-[#e6e7f4] md:hidden">
-		<div class="container-custom !px-[25px]">
+		<div class="container-custom ">
 			<!-- Section Title -->
 			<div class="text-center mb-[58px]">
 				<h2 class="text-[#1a1c3d] font-dm-sans text-[24px] font-medium">

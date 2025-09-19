@@ -3,7 +3,7 @@
 		class="sticky top-0 z-50 transition-all duration-300"
 		:class="isSticky ? 'sticky-header backdrop-sepia-50 backdrop-blur-sm' : 'normal-header'"
 	>
-		<div class="container-custom xl:!px-0 py-[29px] lg:py-[32px] xl:py-[40px]">
+		<div class="container-custom  py-[29px] lg:py-[32px] xl:py-[40px]">
 			<div class="flex items-center justify-between">
 				<!-- Logo - Left most -->
 				<div class="flex items-center w-[80px] h-[23px] md:w-[212px] md:h-[60px] justify-start flex-shrink-0 logo-container">

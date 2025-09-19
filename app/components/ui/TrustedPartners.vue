@@ -13,7 +13,7 @@
 			</div>
 
 			<!-- Desktop & Tablet Layout -->
-			<div class="hidden md:block">
+			<div class="hidden lg:block">
 				<div
 					class="flex flex-nowrap justify-center items-center mx-auto lg:w-[847px] xl:w-full"
 					:style="{ gap: logoStyles.spacing }"
@@ -41,7 +41,7 @@
 			</div>
 
 			<!-- Mobile Slider -->
-			<div class="md:hidden">
+			<div class="lg:hidden">
 				<div class="relative">
 					<!-- Slider Container -->
 					<div
