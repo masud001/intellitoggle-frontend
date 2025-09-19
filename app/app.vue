@@ -10,7 +10,8 @@
 </template>
 
 <script setup>
-// Main app component following Nuxt 4.x documentation
+// Import layout components
+import { ErrorBoundary, Loader } from '~/components/layout';
 </script>
 
 <style scoped>

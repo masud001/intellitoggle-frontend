@@ -9,7 +9,8 @@
 </template>
 
 <script setup>
-// Default layout component
+// Import layout components
+import { Header, Footer } from '~/components/layout';
 </script>
 
 <style scoped>

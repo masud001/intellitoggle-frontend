@@ -46,18 +46,21 @@
 </template>
 
 <script setup>
-import TrustedPartners from "~/components/ui/TrustedPartners.vue";
-import VideoSection from "~/components/VideoSection.vue";
-import CTASection from "~/components/CTASection.vue";
-import ControlPowerSection from "~/components/ControlPowerSection.vue";
-import OpenFeatureSection from "~/components/OpenFeatureSection.vue";
-import WhatIsIntelliToggleSection from "~/components/WhatIsIntelliToggleSection.vue";
-import DartPoweredFeatureFlagSection from "~/components/DartPoweredFeatureFlagSection.vue";
-import WhyTeamsUseIntelliToggleSection from "~/components/WhyTeamsUseIntelliToggleSection.vue";
-import PricingSection from "~/components/PricingSection.vue";
-import FreeTrialCTASection from "~/components/FreeTrialCTASection.vue";
-import DartCodeAISection from "~/components/DartCodeAISection.vue";
-import DartCodeAISectionV2 from "~/components/DartCodeAISectionV2.vue";
+// Import organized components
+import {
+  TrustedPartners,
+  VideoSection,
+  CTASection,
+  ControlPowerSection,
+  OpenFeatureSection,
+  WhatIsIntelliToggleSection,
+  DartPoweredFeatureFlagSection,
+  WhyTeamsUseIntelliToggleSection,
+  PricingSection,
+  FreeTrialCTASection,
+  DartCodeAISection,
+  DartCodeAISectionV2,
+} from '~/components';
 
 // Button click handlers
 const handleGetStarted = () => {

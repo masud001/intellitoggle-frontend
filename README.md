@@ -45,23 +45,46 @@ This is a **Nuxt 4 + Vue 3 + TailwindCSS** implementation of the IntelliToggle h
 ```
 intellitoggle-frontend/
 ├── app/
-│   ├── components/
+│   ├── components/                # All Vue components
 │   │   ├── ui/                    # Reusable UI components
 │   │   │   ├── Button.vue         # Custom button component
 │   │   │   ├── NavLink.vue        # Navigation link component
 │   │   │   ├── SectionTitle.vue   # Section title with gradient text
-│   │   │   └── index.ts           # Component exports
+│   │   │   ├── TrustedPartners.vue # Trusted partners carousel
+│   │   │   ├── FooterLink.vue     # Footer link component
+│   │   │   ├── FooterSection.vue  # Footer section component
+│   │   │   └── index.ts           # UI components export
+│   │   ├── sections/              # Page section components
+│   │   │   ├── Hero.vue           # Hero section
+│   │   │   ├── VideoSection.vue   # Video section
+│   │   │   ├── WhatIsIntelliToggleSection.vue
+│   │   │   ├── PricingSection.vue # Pricing card component
+│   │   │   └── [Other sections...] # Additional page sections
+│   │   ├── layout/                # Layout components
+│   │   │   ├── Header.vue         # Sticky header with mobile menu
+│   │   │   ├── Footer.vue         # Footer with newsletter signup
+│   │   │   ├── ErrorBoundary.vue  # Error boundary component
+│   │   │   ├── Loader.vue         # Loading component
+│   │   │   └── index.ts           # Layout components export
+│   │   ├── common/                # Common/shared components
+│   │   │   ├── BreakpointTest.vue # Breakpoint testing component
+│   │   │   └── index.ts           # Common components export
 │   │   ├── system-design/         # Design system showcase
 │   │   │   ├── ButtonShowcase.vue
 │   │   │   ├── ColorsShowcase.vue
 │   │   │   ├── TypographyShowcase.vue
 │   │   │   └── SpacingShowcase.vue
-│   │   ├── Header.vue             # Sticky header with mobile menu
-│   │   ├── Footer.vue             # Footer with newsletter signup
-│   │   ├── Hero.vue               # Hero section with CTA
-│   │   ├── VideoSection.vue       # Interactive video section
-│   │   ├── PricingSection.vue     # Pricing card component
-│   │   └── [Other sections...]    # Additional page sections
+│   │   └── index.ts               # Main components export
+│   ├── composables/               # Vue composables
+│   │   ├── useBreakpoint.ts       # Breakpoint detection
+│   │   ├── useScroll.ts           # Scroll detection
+│   │   └── index.ts               # Composables export
+│   ├── types/                     # TypeScript type definitions
+│   │   └── index.ts               # All type definitions
+│   ├── constants/                 # Application constants
+│   │   └── index.ts               # All constants
+│   ├── utils/                     # Utility functions
+│   │   └── index.ts               # All utility functions
 │   ├── layouts/
 │   │   └── default.vue            # Main layout wrapper
 │   ├── pages/
@@ -70,15 +93,18 @@ intellitoggle-frontend/
 │   │   ├── pricing.vue            # Pricing page
 │   │   └── components.vue         # Design system showcase
 │   ├── assets/
-│   │   └── css/
-│   │       └── main.css           # Custom styles and font declarations
+│   │   ├── css/
+│   │   │   └── main.css           # Custom styles and font declarations
+│   │   └── design-assets/         # Design reference images
 │   └── app.vue                    # Root component
 ├── public/
 │   ├── fonts/                     # Local font files
 │   ├── images/                    # Design assets
 │   └── icons/                     # SVG icons
+├── screenshots/                   # Project screenshots
 ├── nuxt.config.ts                 # Nuxt configuration
 ├── tailwind.config.js             # Tailwind configuration
+├── CODE_ORGANIZATION.md           # Code organization guide
 └── package.json                   # Dependencies
 ```
 
